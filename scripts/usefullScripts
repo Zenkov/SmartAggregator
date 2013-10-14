@@ -1,0 +1,3 @@
+#Start Derby:
+windows: java -jar %DERBY_HOME%\lib\derbyrun.jar ij
+other: java -jar $DERBY_HOME/lib/derbyrun.jar ij

@@ -27,6 +27,7 @@
     <modules>
         <module>hadoop-manager</module>
         <module>hadoop-cyclic-job</module>
+        <module>hadoop-api</module>
     </modules>
 
     <groupId>by.iba.course.pm</groupId>
@@ -43,9 +44,9 @@
 
     <dependencies>
         <dependency>
-        	<groupId>org.apache.hadoop</groupId>
-        	<artifactId>hadoop-core</artifactId>
-        	<version>1.2.1</version>
+            <groupId>org.apache.hadoop</groupId>
+            <artifactId>hadoop-core</artifactId>
+            <version>1.2.1</version>
         </dependency>
         <dependency>
             <groupId>junit</groupId>
