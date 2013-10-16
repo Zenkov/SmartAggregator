@@ -13,8 +13,14 @@ import java.sql.ResultSet;
 
 
 public class UpdateLinkStatement extends Statement<Boolean> {
-	public UpdateLinkStatement(String link) {
-		super(PredefinedStatement.UPDATE_LINK, link);
+	public UpdateLinkStatement(String... links) {
+		super(null);
+		StringBuilder updateLinksStmt = new StringBuilder("update links set %s='Y' where %s in (");
+		for (String s : links) {
+			updateLinksStmt.append(s).append(",");
+		}
+		updateLinksStmt.replace(updateLinksStmt.length() - 1, updateLinksStmt.length(), ")");
+		setQuery(String.format(updateLinksStmt.toString(), PredefinedStatement.VISITED_COLUMN, PredefinedStatement.LINK_COLUMN));
 	}
 
 	@Override

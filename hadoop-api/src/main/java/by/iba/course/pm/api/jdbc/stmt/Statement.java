@@ -15,7 +15,7 @@ public abstract class Statement<T> {
 	protected final static Logger LOGGER = Logger.getLogger(Statement.class.getName());
 
 	protected T result;
-	private final String query;
+	private String query;
 	private Object[] params;
 
 	public Statement(String query, Object... params) {
@@ -25,6 +25,10 @@ public abstract class Statement<T> {
 
 	public final String getQuery() {
 		return query;
+	}
+
+	protected void setQuery(String query) {
+		this.query = query;
 	}
 
 	public final Object[] getParams() {

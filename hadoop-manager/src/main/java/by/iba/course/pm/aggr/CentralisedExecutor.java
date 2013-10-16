@@ -1,13 +1,16 @@
 package by.iba.course.pm.aggr;
 
 
-import org.apache.commons.cli.Option;
-import org.apache.commons.cli.Options;
-import org.apache.hadoop.util.GenericOptionsParser;
+import by.iba.course.pm.api.jdbc.DBStatementsExecutor;
+import by.iba.course.pm.api.jdbc.stmt.impl.GetLinksStatement;
+import by.iba.course.pm.api.jdbc.stmt.impl.UpdateLinkStatement;
 import org.apache.hadoop.util.RunJar;
 
-import java.util.LinkedList;
+import java.sql.SQLException;
 import java.util.List;
+import java.util.Timer;
+import java.util.TimerTask;
+import java.util.logging.Logger;
 
 /**
  * @Author: Andrew
@@ -15,19 +18,69 @@ import java.util.List;
  */
 
 
-public class CentralisedExecutor {
-	public static void main(String[] args) throws Throwable {
+public class CentralisedExecutor extends TimerTask {
+	private static final int DELAY_BETWEEN_EXECUTIONS = 1000 * 60;
+	private static final int INPUT_INDEX = 1;
+	private static final int OUTPUT_INDEX = 2;
+	private static final String HADOOP_ARTIFACT_NAME = "hadoop-cyclic-job.jar";
+	private static final int HADOOP_EXECUTION_ERROR_CODE = 5000;
+	private static final int SQL_SELECT_ERROR_CODE = 6000;
+	private static final int SQL_UPDATE_ERROR_CODE = 7000;
+	private final String[] args;
+	private static final Logger LOGGER = Logger.getLogger(CentralisedExecutor.class.getName());
+	private Boolean inProgress = false;
 
-		List<String> arguments = new LinkedList<String>();
+	public CentralisedExecutor() {
+		args = new String[]{HADOOP_ARTIFACT_NAME, "input", "output"};
+	}
 
-		//arguments.add("hadoop-cyclic-job.jar");
-		arguments.add("hadoop-examples-1.2.1.jar");
+	public static void main(String[] args) {
+		Timer time = new Timer();
+		time.schedule(new CentralisedExecutor(), 0, DELAY_BETWEEN_EXECUTIONS);
+	}
 
-		arguments.add("grep");
-		arguments.add("CHANGES.txt");
-		arguments.add("output2");
-		arguments.add("'dfs[a-z.]+'");
+	@Override
+	public void run() {
+		if (inProgress) {
+			return;
+		}
+		synchronized (this) {
+			DBStatementsExecutor dbStatementsExecutor = DBStatementsExecutor.getInstance();
+			GetLinksStatement statement = new GetLinksStatement();
+			try {
+				dbStatementsExecutor.executeStatement(statement);
+			} catch (SQLException e) {
+				LOGGER.severe(String.format("%s: %s", e.getClass().getName(), e.getMessage()));
+				System.exit(SQL_SELECT_ERROR_CODE);
+			}
+			List<String> links = statement.getResult();
 
-		RunJar.main(arguments.toArray(new String[arguments.size()]));
+			if (links.isEmpty()) {
+				return;
+			}
+
+			String inputFilePath = createFile(links);
+			args[INPUT_INDEX] = inputFilePath;
+
+			try {
+				inProgress = true;
+				RunJar.main(args);
+			} catch (Throwable t) {
+				LOGGER.severe(String.format("%s: %s", t.getClass().getName(), t.getMessage()));
+				System.exit(HADOOP_EXECUTION_ERROR_CODE);
+			}
+			try {
+				dbStatementsExecutor.executeStatement(new UpdateLinkStatement(links.toArray(new String[links.size()])));
+			} catch (SQLException e) {
+				LOGGER.severe(String.format("%s: %s", e.getClass().getName(), e.getMessage()));
+				System.exit(SQL_UPDATE_ERROR_CODE);
+			}
+			inProgress = false;
+		}
+	}
+
+	private String createFile(List<String> links) {
+		//TODO:implement
+		return null;
 	}
 }

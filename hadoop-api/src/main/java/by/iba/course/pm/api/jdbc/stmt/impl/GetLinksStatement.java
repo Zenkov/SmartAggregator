@@ -16,7 +16,7 @@ import java.util.List;
 
 
 public class GetLinksStatement extends Statement<List<String>> {
-	public GetLinksStatement(String query) {
+	public GetLinksStatement() {
 		super(PredefinedStatement.SELECT_LINKS);
 	}
 
