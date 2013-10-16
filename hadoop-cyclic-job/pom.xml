@@ -26,5 +26,10 @@
     </dependencies>
 
 
-    
+
+    <build>
+        <finalName>hadoop-cyclic-job</finalName>
+    </build>
+
+
 </project>

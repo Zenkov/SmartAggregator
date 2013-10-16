@@ -17,9 +17,9 @@ import java.sql.SQLException;
 
 
 public final class DBStatementsExecutor {
-	private static final String DB_NAME = "";
-	private static final String HOST = "";
-	private static final String PORT = "";
+	private static final String DB_NAME = "LinksDB";
+	private static final String HOST = "localhost";
+	private static final String PORT = "1527";
 	private static final DBStatementsExecutor dbStatementsExecutor = new DBStatementsExecutor();
 
 	private DataSource dataSource;
@@ -32,7 +32,7 @@ public final class DBStatementsExecutor {
 	}
 
 	private void configureDS(BasicDataSource dataSource) {
-		dataSource.setDriverClassName("org.apache.derby.jdbc.EmbeddedDriver");
+		dataSource.setDriverClassName("org.apache.derby.jdbc.ClientDriver");
 		dataSource.setUrl(String.format("jdbc:derby://%s:%s/%s", HOST, PORT, DB_NAME));
 	}
 
@@ -55,9 +55,11 @@ public final class DBStatementsExecutor {
 			preparedStmt.execute();
 			ResultSet resultSet = preparedStmt.getResultSet();
 			statement.processResult(resultSet);
-			resultSet.close();
+
+			if (resultSet != null) {
+				resultSet.close();
+			}
 		} catch (Exception ignored) {
-			ignored.printStackTrace(); //TODO: for debug purposes only, remove later
 		} finally {
 			connection.close();
 		}

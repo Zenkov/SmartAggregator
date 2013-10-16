@@ -15,10 +15,19 @@
         </dependency>
         <dependency>
             <groupId>org.apache.derby</groupId>
-            <artifactId>derby</artifactId>
+            <artifactId>derbyclient</artifactId>
             <version>10.10.1.1</version>
+        </dependency>
+        <dependency>
+            <groupId>junit</groupId>
+            <artifactId>junit</artifactId>
+            <version>3.8.1</version>
+            <scope>test</scope>
         </dependency>
     </dependencies>
 
+    <build>
+        <finalName>hadoop-api</finalName>
+    </build>
 
 </project>

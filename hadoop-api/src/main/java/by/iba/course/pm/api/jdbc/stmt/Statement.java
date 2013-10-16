@@ -14,7 +14,8 @@ import java.util.logging.Logger;
 public abstract class Statement<T> {
 	protected final static Logger LOGGER = Logger.getLogger(Statement.class.getName());
 
-	private final String query;
+	protected T result;
+	private String query;
 	private Object[] params;
 
 	public Statement(String query, Object... params) {
@@ -26,9 +27,17 @@ public abstract class Statement<T> {
 		return query;
 	}
 
+	protected void setQuery(String query) {
+		this.query = query;
+	}
+
 	public final Object[] getParams() {
 		return params;
 	}
 
-	public abstract T processResult(ResultSet resultSet) throws SQLException;
+	public abstract void processResult(ResultSet resultSet) throws SQLException;
+
+	public T getResult() {
+		return result;
+	}
 }

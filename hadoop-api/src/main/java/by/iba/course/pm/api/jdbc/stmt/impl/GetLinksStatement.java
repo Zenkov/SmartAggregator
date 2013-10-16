@@ -16,20 +16,20 @@ import java.util.List;
 
 
 public class GetLinksStatement extends Statement<List<String>> {
-	public GetLinksStatement(String query) {
+	public GetLinksStatement() {
 		super(PredefinedStatement.SELECT_LINKS);
 	}
 
 	@Override
-	public List<String> processResult(ResultSet resultSet) throws SQLException {
+	public void processResult(ResultSet resultSet) throws SQLException {
 		if (resultSet != null) {
 			List<String> links = new LinkedList<String>();
 			while (resultSet.next()) {
 				links.add(resultSet.getString(PredefinedStatement.LINK_COLUMN));
 			}
-			return links;
+			result = links;
 		} else {
-			return null;
+			LOGGER.severe("Null ResultSet after SELECT");
 		}
 	}
 }
