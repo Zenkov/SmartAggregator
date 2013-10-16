@@ -54,6 +54,7 @@ public final class DBStatementsExecutor {
 		try {
 			preparedStmt.execute();
 			ResultSet resultSet = preparedStmt.getResultSet();
+			statement.processResult(resultSet);
 
 			if (resultSet != null) {
 				resultSet.close();

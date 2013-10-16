@@ -3,7 +3,7 @@ package by.iba.course.pm.aggr;
 
 import by.iba.course.pm.api.jdbc.DBStatementsExecutor;
 import by.iba.course.pm.api.jdbc.stmt.impl.GetLinksStatement;
-import by.iba.course.pm.api.jdbc.stmt.impl.UpdateLinkStatement;
+import by.iba.course.pm.api.jdbc.stmt.impl.UpdateLinksStatement;
 import org.apache.hadoop.util.RunJar;
 
 import java.io.BufferedWriter;
@@ -82,7 +82,7 @@ public class CentralisedExecutor extends TimerTask {
 				System.exit(HADOOP_EXECUTION_ERROR_CODE);
 			}
 			try {
-				dbStatementsExecutor.executeStatement(new UpdateLinkStatement(links.toArray(new String[links.size()])));
+				dbStatementsExecutor.executeStatement(new UpdateLinksStatement(links.toArray(new String[links.size()])));
 			} catch (SQLException e) {
 				LOGGER.severe(String.format("%s: %s", e.getClass().getName(), e.getMessage()));
 				System.exit(SQL_UPDATE_ERROR_CODE);

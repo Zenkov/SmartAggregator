@@ -12,12 +12,12 @@ import java.sql.ResultSet;
  */
 
 
-public class UpdateLinkStatement extends Statement<Boolean> {
-	public UpdateLinkStatement(String... links) {
+public class UpdateLinksStatement extends Statement<Boolean> {
+	public UpdateLinksStatement(String... links) {
 		super(null);
 		StringBuilder updateLinksStmt = new StringBuilder("update links set %s='Y' where %s in (");
 		for (String s : links) {
-			updateLinksStmt.append(s).append(",");
+			updateLinksStmt.append("'").append(s).append("'").append(",");
 		}
 		updateLinksStmt.replace(updateLinksStmt.length() - 1, updateLinksStmt.length(), ")");
 		setQuery(String.format(updateLinksStmt.toString(), PredefinedStatement.VISITED_COLUMN, PredefinedStatement.LINK_COLUMN));
