@@ -26,5 +26,8 @@
         </dependency>
     </dependencies>
 
+    <build>
+        <finalName>hadoop-api</finalName>
+    </build>
 
 </project>
