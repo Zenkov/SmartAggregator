@@ -6,6 +6,10 @@ import by.iba.course.pm.api.jdbc.stmt.impl.GetLinksStatement;
 import by.iba.course.pm.api.jdbc.stmt.impl.UpdateLinkStatement;
 import org.apache.hadoop.util.RunJar;
 
+import java.io.BufferedWriter;
+import java.io.File;
+import java.io.FileWriter;
+import java.io.IOException;
 import java.sql.SQLException;
 import java.util.List;
 import java.util.Timer;
@@ -26,6 +30,7 @@ public class CentralisedExecutor extends TimerTask {
 	private static final int HADOOP_EXECUTION_ERROR_CODE = 5000;
 	private static final int SQL_SELECT_ERROR_CODE = 6000;
 	private static final int SQL_UPDATE_ERROR_CODE = 7000;
+	private static final int INPUT_FILE_CREATION_ERROR_CODE = 8000;
 	private final String[] args;
 	private static final Logger LOGGER = Logger.getLogger(CentralisedExecutor.class.getName());
 	private Boolean inProgress = false;
@@ -59,8 +64,15 @@ public class CentralisedExecutor extends TimerTask {
 				return;
 			}
 
-			String inputFilePath = createFile(links);
-			args[INPUT_INDEX] = inputFilePath;
+			File inputTempFile = null;
+			try {
+				inputTempFile = createFile(links);
+			} catch (IOException e) {
+				LOGGER.severe(String.format("%s: %s", e.getClass().getName(), e.getMessage()));
+				System.exit(INPUT_FILE_CREATION_ERROR_CODE);
+			}
+			args[INPUT_INDEX] = inputTempFile.getAbsolutePath();
+			args[OUTPUT_INDEX] = String.valueOf(System.currentTimeMillis());
 
 			try {
 				inProgress = true;
@@ -75,12 +87,21 @@ public class CentralisedExecutor extends TimerTask {
 				LOGGER.severe(String.format("%s: %s", e.getClass().getName(), e.getMessage()));
 				System.exit(SQL_UPDATE_ERROR_CODE);
 			}
+			inputTempFile.delete();
 			inProgress = false;
 		}
 	}
 
-	private String createFile(List<String> links) {
-		//TODO:implement
-		return null;
+	private File createFile(List<String> links) throws IOException {
+		File temp = File.createTempFile("links", ".tmp");
+		BufferedWriter out = new BufferedWriter(new FileWriter(temp));
+		for (String s : links) {
+			out.write(s);
+			out.newLine();
+		}
+		out.flush();
+		out.close();
+
+		return temp;
 	}
 }
