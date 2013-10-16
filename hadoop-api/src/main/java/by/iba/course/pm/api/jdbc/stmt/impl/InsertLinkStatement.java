@@ -18,7 +18,7 @@ public class InsertLinkStatement extends Statement<Boolean>{
 	}
 
 	@Override
-	public Boolean processResult(ResultSet resultSet) {
-		return true; // as we don't care about the insert result
+	public void processResult(ResultSet resultSet) {
+		// do nothing as we don't care about the insert result
 	}
 }

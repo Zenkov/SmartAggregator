@@ -21,15 +21,13 @@ public class GetLinksStatement extends Statement<List<String>> {
 	}
 
 	@Override
-	public List<String> processResult(ResultSet resultSet) throws SQLException {
+	public void processResult(ResultSet resultSet) throws SQLException {
 		if (resultSet != null) {
 			List<String> links = new LinkedList<String>();
 			while (resultSet.next()) {
 				links.add(resultSet.getString(PredefinedStatement.LINK_COLUMN));
 			}
-			return links;
-		} else {
-			return null;
+			result = links;
 		}
 	}
 }
