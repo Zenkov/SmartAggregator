@@ -25,8 +25,7 @@ public class LinksReducer
 
 
         int sum = 0;
-        System.out.println("REDUCE ----->");
-        System.out.println(key);
+
         for (IntWritable val : values) {
             sum += val.get();
         }
