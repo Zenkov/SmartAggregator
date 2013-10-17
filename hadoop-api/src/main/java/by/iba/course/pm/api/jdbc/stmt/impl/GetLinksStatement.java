@@ -28,6 +28,8 @@ public class GetLinksStatement extends Statement<List<String>> {
 				links.add(resultSet.getString(PredefinedStatement.LINK_COLUMN));
 			}
 			result = links;
+		} else {
+			LOGGER.severe("Null ResultSet after SELECT");
 		}
 	}
 }
