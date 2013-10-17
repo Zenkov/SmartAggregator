@@ -5,7 +5,7 @@ import org.apache.hadoop.io.IntWritable;
 import org.apache.hadoop.io.Text;
 import org.apache.hadoop.mapreduce.Mapper;
 import org.jsoup.HttpStatusException;
-import org.jsoup.Jsoup;
+import org.jsoup.*;
 import org.jsoup.UnsupportedMimeTypeException;
 import org.jsoup.nodes.Document;
 import org.jsoup.nodes.Element;
@@ -29,11 +29,13 @@ public class LinksMapper extends Mapper<Object, Text, Text, IntWritable> {
         try {
 
             if (isValidLink(url)) {
+                System.out.println(url);
                 Document document = Jsoup.connect(url).get();
 
                 Elements allLinks = document.select("body a");
                 for (Element a : allLinks) {
                     String urlToWrite = a.attr("abs:href");
+                    System.out.println(urlToWrite);
 
                     if (isValidLink(urlToWrite) && isLinkToInternalPage(urlToWrite, url)) {
                         newLink.set(urlToWrite);
@@ -54,6 +56,9 @@ public class LinksMapper extends Mapper<Object, Text, Text, IntWritable> {
             System.out.println("Socket Exc");
         } catch (IOException ex) {
             System.out.println("IO Exc");
+        }
+        catch (Exception e) {
+            System.out.println("EXCE Exc");
         }
 
     }

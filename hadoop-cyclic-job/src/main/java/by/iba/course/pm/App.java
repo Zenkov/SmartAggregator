@@ -29,12 +29,12 @@ public class App {
         int n = Integer.parseInt(otherArgs[0]);
         for (int i = 0; i < n; i++) {
             Job job = new Job(conf, "wordcount");
-            System.out.println("1");
+
             job.setJarByClass(App.class);
             job.setMapperClass(LinksMapper.class);
-            System.out.println("2");
+
             job.setCombinerClass(LinksReducer.class);
-            System.out.println("3");
+
             job.setReducerClass(LinksReducer.class);
             job.setOutputKeyClass(Text.class);
             job.setOutputValueClass(IntWritable.class);

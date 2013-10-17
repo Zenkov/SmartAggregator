@@ -25,12 +25,14 @@ public class LinksReducer
 
 
         int sum = 0;
+        System.out.println("REDUCE ----->");
+        System.out.println(key);
         for (IntWritable val : values) {
             sum += val.get();
         }
         occurrencesOfWord.set(sum);
 
-        context.write(key, null);
+        context.write(key, occurrencesOfWord);
 
         System.err.println(String.format("[reduce] word: (%s), count: (%d)", key, occurrencesOfWord.get()));
     }
