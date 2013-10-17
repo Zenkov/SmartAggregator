@@ -50,6 +50,7 @@ public class CentralisedExecutor extends TimerTask {
 			return;
 		}
 		synchronized (this) {
+			LOGGER.info("started new scheduled task");
 			DBStatementsExecutor dbStatementsExecutor = DBStatementsExecutor.getInstance();
 			GetLinksStatement statement = new GetLinksStatement();
 			try {
@@ -59,6 +60,7 @@ public class CentralisedExecutor extends TimerTask {
 				System.exit(SQL_SELECT_ERROR_CODE);
 			}
 			List<String> links = statement.getResult();
+			LOGGER.info(String.format("selected %d new links", links.size()));
 
 			if (links.isEmpty()) {
 				return;
@@ -67,6 +69,7 @@ public class CentralisedExecutor extends TimerTask {
 			File inputTempFile = null;
 			try {
 				inputTempFile = createFile(links);
+				LOGGER.info(String.format("created file with links: %s", inputTempFile.getAbsolutePath()));
 			} catch (IOException e) {
 				LOGGER.severe(String.format("%s: %s", e.getClass().getName(), e.getMessage()));
 				System.exit(INPUT_FILE_CREATION_ERROR_CODE);
@@ -77,12 +80,14 @@ public class CentralisedExecutor extends TimerTask {
 			try {
 				inProgress = true;
 				RunJar.main(args);
+				LOGGER.info(String.format("new hadoop job was stared"));
 			} catch (Throwable t) {
 				LOGGER.severe(String.format("%s: %s", t.getClass().getName(), t.getMessage()));
 				System.exit(HADOOP_EXECUTION_ERROR_CODE);
 			}
 			try {
 				dbStatementsExecutor.executeStatement(new UpdateLinksStatement(links.toArray(new String[links.size()])));
+				LOGGER.info(String.format("all %d links have been visited", links.size()));
 			} catch (SQLException e) {
 				LOGGER.severe(String.format("%s: %s", e.getClass().getName(), e.getMessage()));
 				System.exit(SQL_UPDATE_ERROR_CODE);
