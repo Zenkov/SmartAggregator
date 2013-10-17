@@ -1,0 +1,13 @@
+/.idea/*
+/hadoop-cyclic-job/.idea/*
+/hadoop-manager/.idea/*
+/hadoop-api/.idea/*
+/smart-aggregator.iml
+/hadoop-cyclic-job/hadoop-cyclic-job.iml
+/hadoop-manager/hadoop-manager.iml
+/hadoop-api/hadoop-api.iml
+/dependency-reduced-pom.xml
+/hadoop-cyclic-job/dependency-reduced-pom.xml
+/hadoop-manager/dependency-reduced-pom.xml
+/hadoop-api/dependency-reduced-pom.xml
+
