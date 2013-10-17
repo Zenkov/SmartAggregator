@@ -71,7 +71,7 @@ public class LinksMapper extends Mapper<Object, Text, Text, IntWritable> {
         try {
             URL pageUrl = new URL(urlOfPage);
             URL urlInPage = new URL(linkInPage);
-            validLink = pageUrl.getHost() == urlInPage.getHost();
+            validLink = pageUrl.getHost().equals(urlInPage.getHost());
         }
         catch (MalformedURLException e) {
             System.out.println("Incorrect link");
