@@ -11,13 +11,11 @@ import org.jsoup.nodes.Document;
  */
 public abstract class NewsAdapter {
 
-    private Document page;
+    protected Document page;
 
     public NewsAdapter() {
 
     }
 
-    public NewsAdapter(Document document) {
-        this.page = document;
-    }
+
 }

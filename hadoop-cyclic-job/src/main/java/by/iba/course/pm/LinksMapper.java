@@ -29,13 +29,18 @@ public class LinksMapper extends Mapper<Object, Text, Text, IntWritable> {
         try {
 
             if (isValidLink(url)) {
-                System.out.println(url);
-                Document document = Jsoup.connect(url).get();
 
+                Document document = Jsoup.connect(url).get();
+                TutByNewsAdapter adapter = new TutByNewsAdapter(document);
+                if (adapter.isArticlePresent()) {
+                   System.out.println(adapter.getTitle());
+
+                    System.out.println("YEAH!");
+                }
                 Elements allLinks = document.select("body a");
                 for (Element a : allLinks) {
                     String urlToWrite = a.attr("abs:href");
-                    System.out.println(urlToWrite);
+//                    System.out.println(urlToWrite);
 
                     if (isValidLink(urlToWrite) && isLinkToInternalPage(urlToWrite, url)) {
                         newLink.set(urlToWrite);
@@ -76,9 +81,8 @@ public class LinksMapper extends Mapper<Object, Text, Text, IntWritable> {
         try {
             URL pageUrl = new URL(urlOfPage);
             URL urlInPage = new URL(linkInPage);
-            System.out.println(urlInPage.getHost());
-            System.out.println(pageUrl.getHost());
-            validLink = urlInPage.getHost().endsWith(pageUrl.getHost());
+            System.out.println(urlOfPage);
+            validLink = urlInPage.getHost().contains(pageUrl.getHost());
         }
         catch (MalformedURLException e) {
             System.out.println("Incorrect link");

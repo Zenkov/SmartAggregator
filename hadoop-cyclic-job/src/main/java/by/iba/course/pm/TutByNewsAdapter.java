@@ -1,5 +1,7 @@
 package by.iba.course.pm;
 
+import org.jsoup.nodes.Document;
+
 /**
  * Created with IntelliJ IDEA.
  * User: afilipko
@@ -8,5 +10,20 @@ package by.iba.course.pm;
  * To change this template use File | Settings | File Templates.
  */
 public class TutByNewsAdapter extends NewsAdapter {
+    public TutByNewsAdapter(Document document) {
+        this.page = document;
+    }
+
+    public boolean isArticlePresent() {
+        return !this.page.select("body div.body div.h h2").isEmpty();
+    }
+
+    public String getTitle() {
+        return this.page.select("body div.body  div.h h2").first().text();
+    }
+
+    public String getContent() {
+        return this.page.select("body div.body > p").first().text();
+    }
 
 }
