@@ -13,3 +13,5 @@
 
 /derby.log
 /LinksDB/*
+/output/*
+
