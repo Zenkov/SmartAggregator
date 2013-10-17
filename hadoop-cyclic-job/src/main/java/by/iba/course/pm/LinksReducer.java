@@ -1,5 +1,7 @@
 package by.iba.course.pm;
 
+import by.iba.course.pm.api.jdbc.DBStatementsExecutor;
+import by.iba.course.pm.api.jdbc.stmt.impl.InsertLinkStatement;
 import org.apache.hadoop.io.IntWritable;
 import org.apache.hadoop.io.Text;
 import org.apache.hadoop.mapreduce.Reducer;
@@ -31,7 +33,15 @@ public class LinksReducer
         }
         occurrencesOfWord.set(sum);
 
-        context.write(key, occurrencesOfWord);
+//        context.write(key, occurrencesOfWord);
+        DBStatementsExecutor dbStatementsExecutor = DBStatementsExecutor.getInstance();
+        try {
+            dbStatementsExecutor.executeStatement(new InsertLinkStatement(key.toString()));
+
+        } catch (Exception e) {
+            System.out.println(key.toString());
+             System.out.println(e.getMessage());
+        }
 
         System.err.println(String.format("[reduce] word: (%s), count: (%d)", key, occurrencesOfWord.get()));
     }

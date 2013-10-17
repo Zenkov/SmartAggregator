@@ -11,3 +11,5 @@
 /hadoop-manager/dependency-reduced-pom.xml
 /hadoop-api/dependency-reduced-pom.xml
 
+/derby.log
+/LinksDB/*
