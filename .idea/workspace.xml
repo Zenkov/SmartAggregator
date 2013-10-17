@@ -7,13 +7,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="3fbc1339-0e58-4921-b600-41a31d04d00b" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="" />
     </list>
     <list id="87d038f8-582d-4acd-8640-f15fc4fcd5e9" name="do not commit" comment="" />
     <ignored path="SmartAggregator.iws" />
     <ignored path=".idea/workspace.xml" />
     <file path="/pom.xml" changelist="3fbc1339-0e58-4921-b600-41a31d04d00b" time="1381996759739" ignored="false" />
-    <file path="/Dummy.txt" changelist="3fbc1339-0e58-4921-b600-41a31d04d00b" time="1381997677595" ignored="false" />
+    <file path="/Dummy.txt" changelist="3fbc1339-0e58-4921-b600-41a31d04d00b" time="1381999932064" ignored="false" />
     <file path="/LinksMapper.java" changelist="3fbc1339-0e58-4921-b600-41a31d04d00b" time="1381997150557" ignored="false" />
     <file path="/LinksReducer.java" changelist="3fbc1339-0e58-4921-b600-41a31d04d00b" time="1381997336092" ignored="false" />
     <file path="/App.java" changelist="3fbc1339-0e58-4921-b600-41a31d04d00b" time="1381987196928" ignored="false" />
@@ -123,9 +123,7 @@
         <entry file="file://$PROJECT_DIR$/hadoop-cyclic-job/src/main/java/by/iba/course/pm/App.java">
           <provider selected="true" editor-type-id="text-editor">
             <state line="36" column="11" selection-start="1128" selection-end="1128" vertical-scroll-proportion="0.0">
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+              <folding />
             </state>
           </provider>
         </entry>
@@ -134,7 +132,14 @@
         <entry file="file://$PROJECT_DIR$/hadoop-cyclic-job/pom.xml">
           <provider selected="true" editor-type-id="text-editor">
             <state line="31" column="0" selection-start="1142" selection-end="1142" vertical-scroll-proportion="0.0">
-              <folding />
+              <folding>
+                <marker date="1381996768000" expanded="true" signature="1154:2735" placeholder="..." />
+                <marker date="1381996768000" expanded="true" signature="1172:2672" placeholder="..." />
+                <marker date="1381996768000" expanded="true" signature="2244:2653" placeholder="..." />
+                <marker date="1381996768000" expanded="true" signature="2394:2631" placeholder="..." />
+                <marker date="1381996768000" expanded="true" signature="2424:2598" placeholder="..." />
+                <marker date="1381996768000" expanded="true" signature="2459:2567" placeholder="..." />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -837,7 +842,15 @@
       <created>1381997681327</created>
       <updated>1381997681327</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="[Hadoop cyclic job] changes to pom">
+      <created>1381999910198</created>
+      <updated>1381999910198</updated>
+    </task>
+    <task id="LOCAL-00010" summary="[Hadoop cyclic job] changes to pom">
+      <created>1381999934942</created>
+      <updated>1381999934942</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -1029,7 +1042,14 @@
     <entry file="file://$PROJECT_DIR$/hadoop-cyclic-job/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state line="31" column="0" selection-start="1142" selection-end="1142" vertical-scroll-proportion="0.0">
-          <folding />
+          <folding>
+            <marker date="1381996768000" expanded="true" signature="1154:2735" placeholder="..." />
+            <marker date="1381996768000" expanded="true" signature="1172:2672" placeholder="..." />
+            <marker date="1381996768000" expanded="true" signature="2244:2653" placeholder="..." />
+            <marker date="1381996768000" expanded="true" signature="2394:2631" placeholder="..." />
+            <marker date="1381996768000" expanded="true" signature="2424:2598" placeholder="..." />
+            <marker date="1381996768000" expanded="true" signature="2459:2567" placeholder="..." />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1045,9 +1065,7 @@
     <entry file="file://$PROJECT_DIR$/hadoop-cyclic-job/src/main/java/by/iba/course/pm/App.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="36" column="11" selection-start="1128" selection-end="1128" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
