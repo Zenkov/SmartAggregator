@@ -21,28 +21,19 @@ public class App {
             throws Exception {
         Configuration conf = new Configuration();
         String[] otherArgs = new GenericOptionsParser(conf, args).getRemainingArgs();
-        if (otherArgs.length != 3) {
-            System.err.println("Usage: wordcount <levelCount> <inputFile> <outputDir>");
-            System.exit(2);
-        }
 
-        int n = Integer.parseInt(otherArgs[0]);
-        for (int i = 0; i < n; i++) {
-            Job job = new Job(conf, "wordcount");
+        Job job = new Job(conf, "wordcount");
 
-            job.setJarByClass(App.class);
-            job.setMapperClass(LinksMapper.class);
+        job.setJarByClass(App.class);
+        job.setMapperClass(LinksMapper.class);
 
-            job.setCombinerClass(LinksReducer.class);
+        job.setCombinerClass(LinksReducer.class);
 
-            job.setReducerClass(LinksReducer.class);
-            job.setOutputKeyClass(Text.class);
-            job.setOutputValueClass(IntWritable.class);
-            FileInputFormat.addInputPath(job, new Path(otherArgs[1] + "_" + i));
-            FileOutputFormat.setOutputPath(job, new Path(otherArgs[1] + "_" + (i + 1)));
-            job.waitForCompletion(true);
-
-        }
-
+        job.setReducerClass(LinksReducer.class);
+        job.setOutputKeyClass(Text.class);
+        job.setOutputValueClass(IntWritable.class);
+        FileInputFormat.addInputPath(job, new Path(otherArgs[0] ));
+        FileOutputFormat.setOutputPath(job, new Path(otherArgs[1]));
+        job.waitForCompletion(true);
     }
 }

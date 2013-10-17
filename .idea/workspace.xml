@@ -2,8 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3fbc1339-0e58-4921-b600-41a31d04d00b" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/hadoop-cyclic-job/pom.xml" afterPath="$PROJECT_DIR$/hadoop-cyclic-job/pom.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.gitignore" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/input/in.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/hadoop-cyclic-job/src/main/java/by/iba/course/pm/App.java" afterPath="$PROJECT_DIR$/hadoop-cyclic-job/src/main/java/by/iba/course/pm/App.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/hadoop-cyclic-job/src/main/java/by/iba/course/pm/LinksMapper.java" afterPath="$PROJECT_DIR$/hadoop-cyclic-job/src/main/java/by/iba/course/pm/LinksMapper.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/hadoop-cyclic-job/src/main/java/by/iba/course/pm/LinksReducer.java" afterPath="$PROJECT_DIR$/hadoop-cyclic-job/src/main/java/by/iba/course/pm/LinksReducer.java" />
     </list>
     <list id="87d038f8-582d-4acd-8640-f15fc4fcd5e9" name="do not commit" comment="" />
     <ignored path="SmartAggregator.iws" />
@@ -20,7 +23,7 @@
     <ignored path=".idea/compiler.xml" />
     <ignored path=".idea/" />
     <file path="/pom.xml" changelist="3fbc1339-0e58-4921-b600-41a31d04d00b" time="1381998608622" ignored="false" />
-    <file path="/Dummy.txt" changelist="3fbc1339-0e58-4921-b600-41a31d04d00b" time="1382011158645" ignored="false" />
+    <file path="/Dummy.txt" changelist="3fbc1339-0e58-4921-b600-41a31d04d00b" time="1382011215405" ignored="false" />
     <file path="$PROJECT_DIR$/../../IBM/RTC/ERS/keyservice/keyservice-portal-webapp/src/main/webapp/luks-manage-users.jsp" changelist="3fbc1339-0e58-4921-b600-41a31d04d00b" time="1382009302297" ignored="false" />
     <file path="/luks-manage-users.jsp" changelist="3fbc1339-0e58-4921-b600-41a31d04d00b" time="1381744095142" ignored="false" />
     <file path="$PROJECT_DIR$/../../IBM/RTC/ERS/keyservice/keyservice-portal-webapp/src/main/webapp/list-users.jsp" changelist="3fbc1339-0e58-4921-b600-41a31d04d00b" time="1381742413663" ignored="false" />
@@ -100,7 +103,7 @@
       <file leaf-file-name="LinksReducer.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/hadoop-cyclic-job/src/main/java/by/iba/course/pm/LinksReducer.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="17" column="33" selection-start="424" selection-end="424" vertical-scroll-proportion="0.0">
+            <state line="17" column="33" selection-start="478" selection-end="478" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -118,7 +121,7 @@
       <file leaf-file-name="UpdateLinksStatement.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/hadoop-api/src/main/java/by/iba/course/pm/api/jdbc/stmt/impl/UpdateLinksStatement.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="14" column="13" selection-start="245" selection-end="245" vertical-scroll-proportion="0.5548961">
+            <state line="14" column="13" selection-start="245" selection-end="245" vertical-scroll-proportion="0.5532544">
               <folding />
             </state>
           </provider>
@@ -163,7 +166,7 @@
       <file leaf-file-name="App.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/hadoop-cyclic-job/src/main/java/by/iba/course/pm/App.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="40" column="78" selection-start="1363" selection-end="1363" vertical-scroll-proportion="0.0">
+            <state line="39" column="78" selection-start="1189" selection-end="1189" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -308,7 +311,7 @@
       <sortByType />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -659,7 +662,7 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scope" />
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -674,8 +677,8 @@
     <property name="MemberChooser.copyJavadoc" value="false" />
     <property name="GoToClass.toSaveIncludeLibraries" value="false" />
     <property name="WebServerToolWindowFactoryState" value="true" />
-    <property name="FullScreen" value="false" />
     <property name="MemberChooser.showClasses" value="true" />
+    <property name="FullScreen" value="false" />
     <property name="GoToClass.includeLibraries" value="false" />
     <property name="dynamic.classpath" value="false" />
   </component>
@@ -721,6 +724,19 @@
       <option name="PORT" value="5005" />
       <method />
     </configuration>
+    <configuration default="true" type="Applet" factoryName="Applet">
+      <module name="" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="HTML_FILE_NAME" />
+      <option name="HTML_USED" value="false" />
+      <option name="WIDTH" value="400" />
+      <option name="HEIGHT" value="300" />
+      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
+      <option name="VM_PARAMETERS" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <method />
+    </configuration>
     <configuration default="true" type="TestNG" factoryName="TestNG">
       <module name="" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
@@ -746,19 +762,6 @@
       <envs />
       <properties />
       <listeners />
-      <method />
-    </configuration>
-    <configuration default="true" type="Applet" factoryName="Applet">
-      <module name="" />
-      <option name="MAIN_CLASS_NAME" />
-      <option name="HTML_FILE_NAME" />
-      <option name="HTML_USED" value="false" />
-      <option name="WIDTH" value="400" />
-      <option name="HEIGHT" value="300" />
-      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
-      <option name="VM_PARAMETERS" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
       <method />
     </configuration>
     <configuration default="true" type="Application" factoryName="Application">
@@ -865,7 +868,7 @@
     <frame x="-8" y="-8" width="1696" height="1004" extended-state="6" />
     <editor active="false" />
     <layout>
-      <window_info id="Changes" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.55760366" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Changes" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.5574713" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -881,7 +884,7 @@
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32986537" sideWeight="0.66935486" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.249694" sideWeight="0.4423963" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.249694" sideWeight="0.44252872" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32873562" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -972,9 +975,7 @@
     </entry>
     <entry file="jar://C:/Program Files/Java/IBM_SDK6/sdk/src.zip!/java/util/Timer.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="431" column="53" selection-start="14152" selection-end="14152" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
+        <state line="431" column="53" selection-start="14152" selection-end="14152" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/.idea/workspace.xml">
@@ -1001,15 +1002,13 @@
     <entry file="file://$PROJECT_DIR$/hadoop-cyclic-job/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state line="25" column="0" selection-start="944" selection-end="944" vertical-scroll-proportion="0.0">
-          <folding>
-            <marker date="1382001053565" expanded="true" signature="-1:-1" placeholder="..." />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/hadoop-cyclic-job/src/main/java/by/iba/course/pm/App.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="40" column="78" selection-start="1363" selection-end="1363" vertical-scroll-proportion="0.0">
+        <state line="39" column="78" selection-start="1189" selection-end="1189" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
@@ -1023,7 +1022,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/hadoop-cyclic-job/src/main/java/by/iba/course/pm/LinksReducer.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="17" column="33" selection-start="424" selection-end="424" vertical-scroll-proportion="0.0">
+        <state line="17" column="33" selection-start="478" selection-end="478" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
@@ -1072,7 +1071,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/hadoop-api/src/main/java/by/iba/course/pm/api/jdbc/stmt/impl/UpdateLinksStatement.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="14" column="13" selection-start="245" selection-end="245" vertical-scroll-proportion="0.5548961">
+        <state line="14" column="13" selection-start="245" selection-end="245" vertical-scroll-proportion="0.5532544">
           <folding />
         </state>
       </provider>
