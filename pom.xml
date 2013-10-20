@@ -28,6 +28,7 @@
         <module>hadoop-manager</module>
         <module>hadoop-cyclic-job</module>
         <module>hadoop-api</module>
+        <module>nutch-client</module>
     </modules>
 
     <groupId>by.iba.course.pm</groupId>
