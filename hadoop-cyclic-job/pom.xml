@@ -17,11 +17,41 @@
             <groupId>by.iba.course.pm</groupId>
             <version>1.0-SNAPSHOT</version>
         </dependency>
+        <dependency>
+            <!-- jsoup HTML parser library @ http://jsoup.org/ -->
+            <groupId>org.jsoup</groupId>
+            <artifactId>jsoup</artifactId>
+            <version>1.7.2</version>
+        </dependency>
     </dependencies>
 
 
     <build>
         <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-shade-plugin</artifactId>
+                <version>2.0</version>
+                <executions>
+                    <execution>
+                        <phase>package</phase>
+                        <goals>
+                            <goal>shade</goal>
+                        </goals>
+                        <configuration>
+                            <filters>
+                                <filter>
+                                    <artifact>com.test:mvn-sample:1.0.0-SNAPSHOT</artifact>
+                                    <includes>
+                                        <include>**/*.class</include>
+                                        <include>**/*.xml</include>
+                                    </includes>
+                                </filter>
+                            </filters>
+                        </configuration>
+                    </execution>
+                </executions>
+            </plugin>
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-jar-plugin</artifactId>
@@ -34,8 +64,7 @@
                 </configuration>
             </plugin>
         </plugins>
+
         <finalName>hadoop-cyclic-job</finalName>
     </build>
-
-
 </project>
