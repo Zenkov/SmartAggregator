@@ -15,6 +15,7 @@
     <orderEntry type="library" name="Maven: commons-dbcp:commons-dbcp:1.4" level="project" />
     <orderEntry type="library" name="Maven: commons-pool:commons-pool:1.5.4" level="project" />
     <orderEntry type="library" name="Maven: org.apache.derby:derbyclient:10.10.1.1" level="project" />
+    <orderEntry type="library" name="Maven: org.jsoup:jsoup:1.7.2" level="project" />
     <orderEntry type="library" name="Maven: org.apache.hadoop:hadoop-core:1.2.1" level="project" />
     <orderEntry type="library" name="Maven: commons-cli:commons-cli:1.2" level="project" />
     <orderEntry type="library" name="Maven: xmlenc:xmlenc:0.52" level="project" />

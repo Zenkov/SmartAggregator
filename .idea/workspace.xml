@@ -2,23 +2,38 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3fbc1339-0e58-4921-b600-41a31d04d00b" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/nutch-client/pom.xml" />
+      <change type="MOVED" beforePath="C:\Projects\Projects\9th_course\Project Management\smartaggregatorrepo\hadoop-api\src\main\java\by\iba\course\pm\api\jdbc\DBStatementsExecutor.java" afterPath="$PROJECT_DIR$/hadoop-api/src/main/java/by/bsu/course/pm/api/jdbc/DBStatementsExecutor.java" />
+      <change type="MOVED" beforePath="C:\Projects\Projects\9th_course\Project Management\smartaggregatorrepo\hadoop-api\src\main\java\by\iba\course\pm\api\jdbc\stmt\PredefinedStatement.java" afterPath="$PROJECT_DIR$/hadoop-api/src/main/java/by/bsu/course/pm/api/jdbc/stmt/PredefinedStatement.java" />
+      <change type="MOVED" beforePath="C:\Projects\Projects\9th_course\Project Management\smartaggregatorrepo\hadoop-api\src\main\java\by\iba\course\pm\api\jdbc\stmt\Statement.java" afterPath="$PROJECT_DIR$/hadoop-api/src/main/java/by/bsu/course/pm/api/jdbc/stmt/Statement.java" />
+      <change type="MOVED" beforePath="C:\Projects\Projects\9th_course\Project Management\smartaggregatorrepo\hadoop-api\src\main\java\by\iba\course\pm\api\jdbc\stmt\impl\GetLinksStatement.java" afterPath="$PROJECT_DIR$/hadoop-api/src/main/java/by/bsu/course/pm/api/jdbc/stmt/impl/GetLinksStatement.java" />
+      <change type="MOVED" beforePath="C:\Projects\Projects\9th_course\Project Management\smartaggregatorrepo\hadoop-api\src\main\java\by\iba\course\pm\api\jdbc\stmt\impl\InsertLinkStatement.java" afterPath="$PROJECT_DIR$/hadoop-api/src/main/java/by/bsu/course/pm/api/jdbc/stmt/impl/InsertLinkStatement.java" />
+      <change type="MOVED" beforePath="C:\Projects\Projects\9th_course\Project Management\smartaggregatorrepo\hadoop-api\src\main\java\by\iba\course\pm\api\jdbc\stmt\impl\UpdateLinksStatement.java" afterPath="$PROJECT_DIR$/hadoop-api/src/main/java/by/bsu/course/pm/api/jdbc/stmt/impl/UpdateLinksStatement.java" />
+      <change type="MOVED" beforePath="C:\Projects\Projects\9th_course\Project Management\smartaggregatorrepo\hadoop-api\src\test\java\by\iba\course\pm\api\jdbc\DBStatementsExecutorTest.java" afterPath="$PROJECT_DIR$/hadoop-api/src/test/java/by/bsu/course/pm/api/jdbc/DBStatementsExecutorTest.java" />
+      <change type="MOVED" beforePath="C:\Projects\Projects\9th_course\Project Management\smartaggregatorrepo\hadoop-cyclic-job\src\main\java\by\iba\course\pm\App.java" afterPath="$PROJECT_DIR$/hadoop-cyclic-job/src/main/java/by/bsu/course/pm/App.java" />
+      <change type="MOVED" beforePath="C:\Projects\Projects\9th_course\Project Management\smartaggregatorrepo\hadoop-cyclic-job\src\main\java\by\iba\course\pm\LinksMapper.java" afterPath="$PROJECT_DIR$/hadoop-cyclic-job/src/main/java/by/bsu/course/pm/LinksMapper.java" />
+      <change type="MOVED" beforePath="C:\Projects\Projects\9th_course\Project Management\smartaggregatorrepo\hadoop-cyclic-job\src\main\java\by\iba\course\pm\LinksReducer.java" afterPath="$PROJECT_DIR$/hadoop-cyclic-job/src/main/java/by/bsu/course/pm/LinksReducer.java" />
+      <change type="MOVED" beforePath="C:\Projects\Projects\9th_course\Project Management\smartaggregatorrepo\hadoop-cyclic-job\src\main\java\by\iba\course\pm\NewsAdapter.java" afterPath="$PROJECT_DIR$/hadoop-cyclic-job/src/main/java/by/bsu/course/pm/NewsAdapter.java" />
+      <change type="MOVED" beforePath="C:\Projects\Projects\9th_course\Project Management\smartaggregatorrepo\hadoop-cyclic-job\src\main\java\by\iba\course\pm\TutByNewsAdapter.java" afterPath="$PROJECT_DIR$/hadoop-cyclic-job/src/main/java/by/bsu/course/pm/TutByNewsAdapter.java" />
+      <change type="MOVED" beforePath="C:\Projects\Projects\9th_course\Project Management\smartaggregatorrepo\hadoop-cyclic-job\src\test\java\by\iba\course\pm\AppTest.java" afterPath="$PROJECT_DIR$/hadoop-cyclic-job/src/test/java/by/bsu/course/pm/AppTest.java" />
+      <change type="MOVED" beforePath="C:\Projects\Projects\9th_course\Project Management\smartaggregatorrepo\hadoop-manager\src\main\java\by\iba\course\pm\aggr\CentralisedExecutor.java" afterPath="$PROJECT_DIR$/hadoop-manager/src/main/java/by/bsu/course/pm/aggr/CentralisedExecutor.java" />
+      <change type="MOVED" beforePath="C:\Projects\Projects\9th_course\Project Management\smartaggregatorrepo\scripts\usefullScripts" afterPath="$PROJECT_DIR$/scripts/usefull scripts" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/hadoop-cyclic-job/hadoop-cyclic-job.iml" afterPath="$PROJECT_DIR$/hadoop-cyclic-job/hadoop-cyclic-job.iml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pom.xml" afterPath="$PROJECT_DIR$/pom.xml" />
-    </list>
-    <list id="87d038f8-582d-4acd-8640-f15fc4fcd5e9" name="do not commit" comment="do not commit">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hadoop-cyclic-job/hadoop-cyclic-job.iml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/smart-aggregator.iml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/hadoop-api/pom.xml" afterPath="$PROJECT_DIR$/hadoop-api/pom.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/hadoop-cyclic-job/pom.xml" afterPath="$PROJECT_DIR$/hadoop-cyclic-job/pom.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/hadoop-manager/pom.xml" afterPath="$PROJECT_DIR$/hadoop-manager/pom.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/nutch-client/pom.xml" afterPath="$PROJECT_DIR$/nutch-client/pom.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
+    <list id="87d038f8-582d-4acd-8640-f15fc4fcd5e9" name="do not commit" comment="do not commit" />
     <ignored path="SmartAggregator.iws" />
     <ignored path=".idea/workspace.xml" />
     <ignored path=".idea/" />
     <ignored mask="*.iml" />
-    <file path="/pom.xml" changelist="3fbc1339-0e58-4921-b600-41a31d04d00b" time="1381988777899" ignored="false" />
-    <file path="/Dummy.txt" changelist="3fbc1339-0e58-4921-b600-41a31d04d00b" time="1382301975682" ignored="false" />
-    <file path="$PROJECT_DIR$/.idea/workspace.xml" changelist="3fbc1339-0e58-4921-b600-41a31d04d00b" time="1381783353796" ignored="false" />
+    <file path="/pom.xml" changelist="3fbc1339-0e58-4921-b600-41a31d04d00b" time="1382307619852" ignored="false" />
+    <file path="/Dummy.txt" changelist="3fbc1339-0e58-4921-b600-41a31d04d00b" time="1382304516969" ignored="false" />
     <file path="/fragment.java" changelist="3fbc1339-0e58-4921-b600-41a31d04d00b" time="1381959206263" ignored="false" />
-    <file path="/usefullScripts" changelist="3fbc1339-0e58-4921-b600-41a31d04d00b" time="1381880958474" ignored="false" />
+    <file path="/usefullScripts" changelist="3fbc1339-0e58-4921-b600-41a31d04d00b" time="1382305518514" ignored="false" />
     <file path="/CentralisedExecutor.java" changelist="3fbc1339-0e58-4921-b600-41a31d04d00b" time="1381791979335" ignored="false" />
     <file path="/DBWrapper.java" changelist="3fbc1339-0e58-4921-b600-41a31d04d00b" time="1381793439017" ignored="false" />
     <file path="/DBStatementsExecutor.java" changelist="3fbc1339-0e58-4921-b600-41a31d04d00b" time="1381958766584" ignored="false" />
@@ -27,9 +42,11 @@
     <file path="/InsertLinkStatement.java" changelist="3fbc1339-0e58-4921-b600-41a31d04d00b" time="1381875344622" ignored="false" />
     <file path="/UpdateLinkStatement.java" changelist="3fbc1339-0e58-4921-b600-41a31d04d00b" time="1381875410153" ignored="false" />
     <file path="/GetLinksStatement.java" changelist="3fbc1339-0e58-4921-b600-41a31d04d00b" time="1381958033914" ignored="false" />
-    <file path="/a.dummy" changelist="3fbc1339-0e58-4921-b600-41a31d04d00b" time="1381958817127" ignored="false" />
+    <file path="/a.dummy" changelist="3fbc1339-0e58-4921-b600-41a31d04d00b" time="1382307607945" ignored="false" />
     <file path="/DBStatementsExecutorTest.java" changelist="3fbc1339-0e58-4921-b600-41a31d04d00b" time="1381959503428" ignored="false" />
     <file path="/UpdateLinksStatement.java" changelist="3fbc1339-0e58-4921-b600-41a31d04d00b" time="1381959291971" ignored="false" />
+    <file path="/readme.txt" changelist="3fbc1339-0e58-4921-b600-41a31d04d00b" time="1382304501375" ignored="false" />
+    <file path="/log4j.properties" changelist="3fbc1339-0e58-4921-b600-41a31d04d00b" time="1382307179866" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -81,7 +98,7 @@
       </breakpoint>
     </breakpoint_any>
     <line_breakpoints default_suspend_policy="SuspendAll" default_condition_enabled="true">
-      <breakpoint url="file://$PROJECT_DIR$/hadoop-api/src/test/java/by/iba/course/pm/api/jdbc/DBStatementsExecutorTest.java" line="37" class="by.iba.course.pm.api.jdbc.DBStatementsExecutorTest" package="by.iba.course.pm.api.jdbc">
+      <breakpoint url="file://$PROJECT_DIR$/hadoop-api/src/test/java/by/bsu/course/pm/api/jdbc/DBStatementsExecutorTest.java" line="37" class="by.iba.course.pm.api.jdbc.DBStatementsExecutorTest" package="by.iba.course.pm.api.jdbc">
         <option name="ENABLED" value="true" />
         <option name="LOG_ENABLED" value="false" />
         <option name="LOG_EXPRESSION_ENABLED" value="false" />
@@ -96,7 +113,7 @@
         <option name="CONDITION" value="" />
         <option name="LOG_MESSAGE" value="" />
       </breakpoint>
-      <breakpoint url="file://$PROJECT_DIR$/hadoop-api/src/test/java/by/iba/course/pm/api/jdbc/DBStatementsExecutorTest.java" line="58" class="by.iba.course.pm.api.jdbc.DBStatementsExecutorTest" package="by.iba.course.pm.api.jdbc">
+      <breakpoint url="file://$PROJECT_DIR$/hadoop-api/src/test/java/by/bsu/course/pm/api/jdbc/DBStatementsExecutorTest.java" line="58" class="by.iba.course.pm.api.jdbc.DBStatementsExecutorTest" package="by.iba.course.pm.api.jdbc">
         <option name="ENABLED" value="true" />
         <option name="LOG_ENABLED" value="false" />
         <option name="LOG_EXPRESSION_ENABLED" value="false" />
@@ -122,46 +139,10 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="DBStatementsExecutor.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/hadoop-api/src/main/java/by/iba/course/pm/api/jdbc/DBStatementsExecutor.java">
+      <file leaf-file-name="usefull scripts" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/scripts/usefull scripts">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="65" column="0" selection-start="1738" selection-end="1738" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="UpdateLinksStatement.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/hadoop-api/src/main/java/by/iba/course/pm/api/jdbc/stmt/impl/UpdateLinksStatement.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="23" column="0" selection-start="761" selection-end="761" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="usefullScripts" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/scripts/usefullScripts">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="1" column="0" selection-start="37" selection-end="55" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="InsertLinkStatement.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/hadoop-api/src/main/java/by/iba/course/pm/api/jdbc/stmt/impl/InsertLinkStatement.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="17" column="5" selection-start="386" selection-end="386" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="DBStatementsExecutorTest.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/hadoop-api/src/test/java/by/iba/course/pm/api/jdbc/DBStatementsExecutorTest.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="69" column="77" selection-start="2481" selection-end="2481" vertical-scroll-proportion="0.0">
+            <state line="9" column="30" selection-start="309" selection-end="309" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -170,44 +151,64 @@
       <file leaf-file-name="pom.xml" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/hadoop-cyclic-job/pom.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="19" column="46" selection-start="732" selection-end="732" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="pom.xml" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/nutch-client/pom.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+            <state line="7" column="26" selection-start="395" selection-end="395" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
       <file leaf-file-name="pom.xml" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/nutch-client/pom.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="11" column="53" selection-start="436" selection-end="436" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="readme.txt" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/nutch-client/readme.txt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="6" column="84" selection-start="527" selection-end="527" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="pom.xml" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/hadoop-manager/pom.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="58" column="0" selection-start="1812" selection-end="2263" vertical-scroll-proportion="0.0">
+            <state line="47" column="33" selection-start="1715" selection-end="1715" vertical-scroll-proportion="1.4798851">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="GetLinksStatement.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/hadoop-api/src/main/java/by/iba/course/pm/api/jdbc/stmt/impl/GetLinksStatement.java">
+      <file leaf-file-name="pom.xml" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/hadoop-api/pom.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="20" column="0" selection-start="452" selection-end="452" vertical-scroll-proportion="0.0">
+            <state line="13" column="58" selection-start="586" selection-end="586" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Statement.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/hadoop-api/src/main/java/by/iba/course/pm/api/jdbc/stmt/Statement.java">
+      <file leaf-file-name="pom.xml" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/pom.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="14" column="0" selection-start="218" selection-end="218" vertical-scroll-proportion="0.0">
+            <state line="33" column="19" selection-start="1137" selection-end="1137" vertical-scroll-proportion="0.0">
               <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="CentralisedExecutor.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/hadoop-manager/src/main/java/by/bsu/course/pm/aggr/CentralisedExecutor.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="87" column="56" selection-start="2890" selection-end="2890" vertical-scroll-proportion="0.0">
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -231,22 +232,22 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/hadoop-cyclic-job/src/test/java/by/iba/course/pm/App.java" />
-        <option value="$PROJECT_DIR$/hadoop-manager/src/main/java/by/iba/course/pm/aggr/CentralisedExecutor.java" />
-        <option value="$PROJECT_DIR$/pom.xml" />
-        <option value="$PROJECT_DIR$/hadoop-api/src/main/java/by/iba/course/pm/api/jdbc/DBWrapper.java" />
-        <option value="$PROJECT_DIR$/hadoop-manager/pom.xml" />
-        <option value="$PROJECT_DIR$/hadoop-api/src/main/java/by/iba/course/pm/api/jdbc/stmt/impl/InsertLinkStatement.java" />
         <option value="$PROJECT_DIR$/hadoop-api/src/main/java/by/iba/course/pm/api/jdbc/stmt/impl/UpdateLinkStatement.java" />
         <option value="$PROJECT_DIR$/hadoop-api/src/main/java/by/iba/course/pm/api/jdbc/stmt/Statement.java" />
         <option value="$PROJECT_DIR$/hadoop-api/src/main/java/by/iba/course/pm/api/jdbc/stmt/PredefinedStatement.java" />
-        <option value="$PROJECT_DIR$/hadoop-api/pom.xml" />
-        <option value="$PROJECT_DIR$/scripts/usefullScripts" />
         <option value="$PROJECT_DIR$/hadoop-api/src/main/java/by/iba/course/pm/api/jdbc/stmt/impl/GetLinksStatement.java" />
         <option value="$PROJECT_DIR$/hadoop-api/src/main/java/by/iba/course/pm/api/jdbc/DBStatementsExecutor.java" />
         <option value="$PROJECT_DIR$/hadoop-api/src/main/java/by/iba/course/pm/api/jdbc/stmt/impl/UpdateLinksStatement.java" />
         <option value="$PROJECT_DIR$/hadoop-api/src/test/java/by/iba/course/pm/api/jdbc/DBStatementsExecutorTest.java" />
+        <option value="$PROJECT_DIR$/nutch-client/readme.txt" />
+        <option value="$PROJECT_DIR$/scripts/usefullScripts" />
+        <option value="$PROJECT_DIR$/hadoop-cyclic-job/src/main/resources/log4j.properties" />
+        <option value="$PROJECT_DIR$/hadoop-manager/src/main/resources/log4j.properties" />
+        <option value="$PROJECT_DIR$/hadoop-api/pom.xml" />
         <option value="$PROJECT_DIR$/hadoop-cyclic-job/pom.xml" />
+        <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/hadoop-manager/pom.xml" />
+        <option value="$PROJECT_DIR$/nutch-client/pom.xml" />
       </list>
     </option>
   </component>
@@ -348,7 +349,7 @@
       <showMembers />
       <showModules />
       <showLibraryContents />
-      <hideEmptyPackages />
+      <hideEmptyPackages ProjectPane="true" />
       <abbreviatePackageNames />
       <autoscrollToSource />
       <autoscrollFromSource ProjectPane="true" />
@@ -390,6 +391,194 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="smartaggregatorrepo" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="smartaggregatorrepo" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="nutch-client" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="smartaggregatorrepo" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="smartaggregatorrepo" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="hadoop-manager" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="smartaggregatorrepo" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="smartaggregatorrepo" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="hadoop-manager" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="smartaggregatorrepo" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="smartaggregatorrepo" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="hadoop-cyclic-job" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="smartaggregatorrepo" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="smartaggregatorrepo" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="hadoop-cyclic-job" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="smartaggregatorrepo" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="smartaggregatorrepo" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="hadoop-cyclic-job" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="smartaggregatorrepo" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="smartaggregatorrepo" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="hadoop-api" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="smartaggregatorrepo" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="smartaggregatorrepo" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="hadoop-api" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="smartaggregatorrepo" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="smartaggregatorrepo" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="hadoop-api" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="smartaggregatorrepo" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="smartaggregatorrepo" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="hadoop-api" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="jdbc" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
         </subPane>
       </pane>
       <pane id="PackagesPane">
@@ -406,19 +595,23 @@
     <property name="options.lastSelected" value="MavenSettings" />
     <property name="recentsLimit" value="5" />
     <property name="MemberChooser.sorted" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/nutch-client" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="MemberChooser.copyJavadoc" value="false" />
     <property name="GoToClass.toSaveIncludeLibraries" value="false" />
     <property name="WebServerToolWindowFactoryState" value="true" />
-    <property name="MemberChooser.showClasses" value="true" />
     <property name="FullScreen" value="false" />
+    <property name="MemberChooser.showClasses" value="true" />
     <property name="GoToClass.includeLibraries" value="false" />
-    <property name="options.searchVisible" value="true" />
-    <property name="options.splitter.details.proportions" value="0.2" />
     <property name="dynamic.classpath" value="false" />
+    <property name="options.splitter.details.proportions" value="0.2" />
+    <property name="options.searchVisible" value="true" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Projects\Projects\9th_course\Project Management\smartaggregatorrepo\hadoop-cyclic-job\src\main\resources" />
+      <recent name="C:\Projects\Projects\9th_course\Project Management\smartaggregatorrepo\hadoop-manager\src\main\resources" />
+    </key>
     <key name="IntroduceConstantDialog.RECENTS_KEY">
       <recent name="by.iba.course.pm.api.jdbc.DBStatementsExecutorTest" />
       <recent name="by.iba.course.pm.api.jdbc.stmt.impl.GetLinksStatement" />
@@ -432,15 +625,15 @@
     <configuration default="false" name="DBStatementsExecutorTest.testGetAllLinks" type="JUnit" factoryName="JUnit" temporary="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
-          <option name="PATTERN" value="by.iba.course.pm.api.jdbc.*" />
+          <option name="PATTERN" value="by.bsu.course.pm.api.jdbc.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
       <module name="hadoop-api" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="by.iba.course.pm.api.jdbc" />
-      <option name="MAIN_CLASS_NAME" value="by.iba.course.pm.api.jdbc.DBStatementsExecutorTest" />
+      <option name="PACKAGE_NAME" value="by.bsu.course.pm.api.jdbc" />
+      <option name="MAIN_CLASS_NAME" value="by.bsu.course.pm.api.jdbc.DBStatementsExecutorTest" />
       <option name="METHOD_NAME" value="testGetAllLinks" />
       <option name="TEST_OBJECT" value="method" />
       <option name="VM_PARAMETERS" value="-ea" />
@@ -464,15 +657,15 @@
     <configuration default="false" name="DBStatementsExecutorTest.testUpdateLinks" type="JUnit" factoryName="JUnit" temporary="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
-          <option name="PATTERN" value="by.iba.course.pm.api.jdbc.*" />
+          <option name="PATTERN" value="by.bsu.course.pm.api.jdbc.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
       <module name="hadoop-api" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="by.iba.course.pm.api.jdbc" />
-      <option name="MAIN_CLASS_NAME" value="by.iba.course.pm.api.jdbc.DBStatementsExecutorTest" />
+      <option name="PACKAGE_NAME" value="by.bsu.course.pm.api.jdbc" />
+      <option name="MAIN_CLASS_NAME" value="by.bsu.course.pm.api.jdbc.DBStatementsExecutorTest" />
       <option name="METHOD_NAME" value="testUpdateLinks" />
       <option name="TEST_OBJECT" value="method" />
       <option name="VM_PARAMETERS" value="-ea" />
@@ -496,15 +689,15 @@
     <configuration default="false" name="DBStatementsExecutorTest" type="JUnit" factoryName="JUnit" temporary="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
-          <option name="PATTERN" value="by.iba.course.pm.api.jdbc.*" />
+          <option name="PATTERN" value="by.bsu.course.pm.api.jdbc.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
       <module name="hadoop-api" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="by.iba.course.pm.api.jdbc" />
-      <option name="MAIN_CLASS_NAME" value="by.iba.course.pm.api.jdbc.DBStatementsExecutorTest" />
+      <option name="PACKAGE_NAME" value="by.bsu.course.pm.api.jdbc" />
+      <option name="MAIN_CLASS_NAME" value="by.bsu.course.pm.api.jdbc.DBStatementsExecutorTest" />
       <option name="METHOD_NAME" />
       <option name="TEST_OBJECT" value="class" />
       <option name="VM_PARAMETERS" value="-ea" />
@@ -693,7 +886,19 @@
       <created>1381988903251</created>
       <updated>1381988903251</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="Merge branch 'master' of https://bitbucket.org/alohinau/smartaggregatorrepo&#10;&#10;Conflicts:&#10;&#9;.idea/workspace.xml&#10;">
+      <created>1382303943264</created>
+      <updated>1382303943264</updated>
+    </task>
+    <task id="LOCAL-00013" summary="added nutch client to parent pom">
+      <created>1382304040138</created>
+      <updated>1382304040138</updated>
+    </task>
+    <task id="LOCAL-00014" summary="configuration readme added">
+      <created>1382304519525</created>
+      <updated>1382304519525</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="TodoView" selected-index="0">
@@ -722,26 +927,26 @@
     <layout>
       <window_info id="Changes" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.54565704" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32962137" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Remote Host" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3997773" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="IDEtalk Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.54565704" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.54565704" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="IDEtalk" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32739422" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33064517" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32962137" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.34471717" sideWeight="0.454343" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3484525" sideWeight="0.454343" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24919957" sideWeight="0.454343" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32666665" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32628062" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33064517" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
     </layout>
@@ -788,7 +993,7 @@
     <option name="WRAP_WHEN_TYPING_REACHES_RIGHT_MARGIN" value="false" />
     <option name="FORCE_NON_EMPTY_COMMENT" value="false" />
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="false" />
-    <option name="LAST_COMMIT_MESSAGE" value="configured maven build for hadoop (main class pointed)" />
+    <option name="LAST_COMMIT_MESSAGE" value="configuration readme added" />
     <option name="MAKE_NEW_CHANGELIST_ACTIVE" value="false" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_FILES_UP_TO_DATE_BEFORE_COMMIT" value="false" />
@@ -810,6 +1015,9 @@
     <MESSAGE value="added test and several fixes" />
     <MESSAGE value="fixed sql statements + wrote all tests for them" />
     <MESSAGE value="configured maven build for hadoop (main class pointed)" />
+    <MESSAGE value="Merge branch 'master' of https://bitbucket.org/alohinau/smartaggregatorrepo&#10;&#10;Conflicts:&#10;&#9;.idea/workspace.xml&#10;" />
+    <MESSAGE value="added nutch client to parent pom" />
+    <MESSAGE value="configuration readme added" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -819,78 +1027,14 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/hadoop-cyclic-job/src/main/java/by/iba/course/pm/App.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="13" selection-start="89" selection-end="89" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/hadoop-cyclic-job/src/test/java/by/iba/course/pm/AppTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="10" column="12" selection-start="195" selection-end="203" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="47" column="48" selection-start="1545" selection-end="1545" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/derby/derby/10.10.1.1/derby-10.10.1.1.jar!/org/apache/derby/jdbc/EmbeddedDriver.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="16" column="37" selection-start="732" selection-end="732" vertical-scroll-proportion="0.48022598" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/hadoop-api/src/main/java/by/iba/course/pm/api/jdbc/stmt/impl/InsertLinkStatement.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="17" column="5" selection-start="386" selection-end="386" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/scripts/usefullScripts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="1" column="0" selection-start="37" selection-end="55" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/hadoop-api/src/main/java/by/iba/course/pm/api/jdbc/stmt/impl/GetLinksStatement.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="20" column="0" selection-start="452" selection-end="452" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/hadoop-api/src/main/java/by/iba/course/pm/api/jdbc/stmt/impl/UpdateLinksStatement.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="23" column="0" selection-start="761" selection-end="761" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/hadoop-api/src/main/java/by/iba/course/pm/api/jdbc/DBStatementsExecutor.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="65" column="0" selection-start="1738" selection-end="1738" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/hadoop-api/src/test/java/by/iba/course/pm/api/jdbc/DBStatementsExecutorTest.java">
+    <entry file="file://$PROJECT_DIR$/hadoop-api/src/test/java/by/bsu/course/pm/api/jdbc/DBStatementsExecutorTest.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="69" column="77" selection-start="2481" selection-end="2481" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/hadoop-api/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="22" column="34" selection-start="882" selection-end="882" vertical-scroll-proportion="0.71238095">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/hadoop-api/src/main/java/by/iba/course/pm/api/jdbc/stmt/Statement.java">
+    <entry file="file://$PROJECT_DIR$/hadoop-api/src/main/java/by/bsu/course/pm/api/jdbc/stmt/Statement.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="14" column="0" selection-start="218" selection-end="218" vertical-scroll-proportion="0.0">
           <folding />
@@ -902,23 +1046,81 @@
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/hadoop-manager/pom.xml">
+    <entry file="file://$PROJECT_DIR$/input/in.txt">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="58" column="0" selection-start="1812" selection-end="2263" vertical-scroll-proportion="0.0">
+        <state line="0" column="0" selection-start="0" selection-end="13" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/nutch-client/readme.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="6" column="84" selection-start="527" selection-end="527" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/AppData/Local/Temp/Rar$DR02.247/log4j.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="10" column="36" selection-start="561" selection-end="561" vertical-scroll-proportion="0.3119266">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scripts/usefull scripts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="9" column="30" selection-start="309" selection-end="309" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/AppData/Local/Temp/Rar$DR04.514/task-log4j.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="9" column="54" selection-start="509" selection-end="509" vertical-scroll-proportion="0.27419356">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/hadoop-cyclic-job/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="19" column="46" selection-start="732" selection-end="732" vertical-scroll-proportion="0.0">
+        <state line="7" column="26" selection-start="395" selection-end="395" vertical-scroll-proportion="0.0">
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/hadoop-api/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="13" column="58" selection-start="586" selection-end="586" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="33" column="19" selection-start="1137" selection-end="1137" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/hadoop-manager/src/main/java/by/bsu/course/pm/aggr/CentralisedExecutor.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="87" column="56" selection-start="2890" selection-end="2890" vertical-scroll-proportion="0.0">
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/nutch-client/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+        <state line="11" column="53" selection-start="436" selection-end="436" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/hadoop-manager/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="47" column="33" selection-start="1715" selection-end="1715" vertical-scroll-proportion="1.4798851">
           <folding />
         </state>
       </provider>
@@ -975,7 +1177,7 @@
       </state>
       <state key="ModuleStructureConfigurable.UI">
         <settings>
-          <last-edited>hadoop-cyclic-job</last-edited>
+          <last-edited>nutch-client</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
