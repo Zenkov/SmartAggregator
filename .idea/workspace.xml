@@ -7,14 +7,38 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="3fbc1339-0e58-4921-b600-41a31d04d00b" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hadoop-manager/src/main/java/by/bsu/course/pm/aggr/CentralisedExecutor.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hadoop-manager/src/main/java/by/bsu/course/pm/aggr/ScheduledJob.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hadoop-cyclic-job/hadoop-cyclic-job.iml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/nutch-client/pom.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/nutch-client/readme.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/smart-aggregator.iml" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/hadoop-manager/src/main/java/by/iba/course/pm/aggr/CentralisedExecutor.java" afterPath="" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/hadoop-api/src/main/java/by/iba/course/pm/api/jdbc/DBStatementsExecutor.java" afterPath="$PROJECT_DIR$/hadoop-api/src/main/java/by/bsu/course/pm/api/jdbc/DBStatementsExecutor.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/hadoop-api/src/main/java/by/iba/course/pm/api/jdbc/stmt/PredefinedStatement.java" afterPath="$PROJECT_DIR$/hadoop-api/src/main/java/by/bsu/course/pm/api/jdbc/stmt/PredefinedStatement.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/hadoop-api/src/main/java/by/iba/course/pm/api/jdbc/stmt/Statement.java" afterPath="$PROJECT_DIR$/hadoop-api/src/main/java/by/bsu/course/pm/api/jdbc/stmt/Statement.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/hadoop-api/src/main/java/by/iba/course/pm/api/jdbc/stmt/impl/GetLinksStatement.java" afterPath="$PROJECT_DIR$/hadoop-api/src/main/java/by/bsu/course/pm/api/jdbc/stmt/impl/GetLinksStatement.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/hadoop-api/src/main/java/by/iba/course/pm/api/jdbc/stmt/impl/InsertLinkStatement.java" afterPath="$PROJECT_DIR$/hadoop-api/src/main/java/by/bsu/course/pm/api/jdbc/stmt/impl/InsertLinkStatement.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/hadoop-api/src/main/java/by/iba/course/pm/api/jdbc/stmt/impl/UpdateLinksStatement.java" afterPath="$PROJECT_DIR$/hadoop-api/src/main/java/by/bsu/course/pm/api/jdbc/stmt/impl/UpdateLinksStatement.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/hadoop-api/src/test/java/by/iba/course/pm/api/jdbc/DBStatementsExecutorTest.java" afterPath="$PROJECT_DIR$/hadoop-api/src/test/java/by/bsu/course/pm/api/jdbc/DBStatementsExecutorTest.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/hadoop-cyclic-job/src/main/java/by/iba/course/pm/App.java" afterPath="$PROJECT_DIR$/hadoop-cyclic-job/src/main/java/by/bsu/course/pm/App.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/hadoop-cyclic-job/src/main/java/by/iba/course/pm/LinksMapper.java" afterPath="$PROJECT_DIR$/hadoop-cyclic-job/src/main/java/by/bsu/course/pm/LinksMapper.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/hadoop-cyclic-job/src/main/java/by/iba/course/pm/LinksReducer.java" afterPath="$PROJECT_DIR$/hadoop-cyclic-job/src/main/java/by/bsu/course/pm/LinksReducer.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/hadoop-cyclic-job/src/main/java/by/iba/course/pm/NewsAdapter.java" afterPath="$PROJECT_DIR$/hadoop-cyclic-job/src/main/java/by/bsu/course/pm/NewsAdapter.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/hadoop-cyclic-job/src/main/java/by/iba/course/pm/TutByNewsAdapter.java" afterPath="$PROJECT_DIR$/hadoop-cyclic-job/src/main/java/by/bsu/course/pm/TutByNewsAdapter.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/hadoop-cyclic-job/src/test/java/by/iba/course/pm/AppTest.java" afterPath="$PROJECT_DIR$/hadoop-cyclic-job/src/test/java/by/bsu/course/pm/AppTest.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/scripts/usefullScripts" afterPath="$PROJECT_DIR$/scripts/usefull scripts" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pom.xml" afterPath="$PROJECT_DIR$/pom.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/hadoop-api/pom.xml" afterPath="$PROJECT_DIR$/hadoop-api/pom.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/hadoop-cyclic-job/pom.xml" afterPath="$PROJECT_DIR$/hadoop-cyclic-job/pom.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/hadoop-manager/pom.xml" afterPath="$PROJECT_DIR$/hadoop-manager/pom.xml" />
     </list>
     <list id="87d038f8-582d-4acd-8640-f15fc4fcd5e9" name="do not commit" comment="" />
     <list id="2be9c5bc-6fab-48ed-8249-6e4894af682a" name="New changelist" comment="" />
     <ignored path="SmartAggregator.iws" />
     <ignored path=".idea/workspace.xml" />
     <file path="/pom.xml" changelist="3fbc1339-0e58-4921-b600-41a31d04d00b" time="1381996759739" ignored="false" />
-    <file path="/Dummy.txt" changelist="3fbc1339-0e58-4921-b600-41a31d04d00b" time="1382420022664" ignored="false" />
+    <file path="/Dummy.txt" changelist="3fbc1339-0e58-4921-b600-41a31d04d00b" time="1382420274073" ignored="false" />
     <file path="/LinksMapper.java" changelist="3fbc1339-0e58-4921-b600-41a31d04d00b" time="1382015381553" ignored="false" />
     <file path="/LinksReducer.java" changelist="3fbc1339-0e58-4921-b600-41a31d04d00b" time="1382009097901" ignored="false" />
     <file path="/App.java" changelist="3fbc1339-0e58-4921-b600-41a31d04d00b" time="1381987196928" ignored="false" />
@@ -37,24 +61,8 @@
     <disable_hints />
   </component>
   <component name="DebuggerManager">
-    <line_breakpoints default_suspend_policy="SuspendAll" default_condition_enabled="true">
-      <breakpoint url="file://$PROJECT_DIR$/hadoop-api/src/main/java/by/iba/course/pm/api/jdbc/stmt/impl/GetLinksStatement.java" line="3" class="GetLinksStatement.java" package="">
-        <option name="ENABLED" value="true" />
-        <option name="LOG_ENABLED" value="false" />
-        <option name="LOG_EXPRESSION_ENABLED" value="false" />
-        <option name="SUSPEND_POLICY" value="SuspendAll" />
-        <option name="SUSPEND" value="true" />
-        <option name="COUNT_FILTER_ENABLED" value="false" />
-        <option name="COUNT_FILTER" value="0" />
-        <option name="CONDITION_ENABLED" value="true" />
-        <option name="CLASS_FILTERS_ENABLED" value="false" />
-        <option name="INSTANCE_FILTERS_ENABLED" value="false" />
-        <option name="CONDITION" value="" />
-        <option name="LOG_MESSAGE" value="" />
-      </breakpoint>
-    </line_breakpoints>
-    <ui_properties default_suspend_policy="SuspendAll" default_condition_enabled="true" />
-    <breakpoint_any default_suspend_policy="SuspendAll" default_condition_enabled="true">
+    <line_breakpoints default_suspend_policy="SuspendAll" default_condition_enabled="true" />
+    <breakpoint_any>
       <breakpoint>
         <option name="NOTIFY_CAUGHT" value="true" />
         <option name="NOTIFY_UNCAUGHT" value="true" />
@@ -99,91 +107,10 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="LinksMapper.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/hadoop-cyclic-job/src/main/java/by/iba/course/pm/LinksMapper.java">
+      <file leaf-file-name="CentralisedExecutor.java" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/hadoop-manager/src/main/java/by/bsu/course/pm/aggr/CentralisedExecutor.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="37" column="20" selection-start="1191" selection-end="1191" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="LinksReducer.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/hadoop-cyclic-job/src/main/java/by/iba/course/pm/LinksReducer.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="36" column="10" selection-start="990" selection-end="990" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="CentralisedExecutor.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/hadoop-manager/src/main/java/by/iba/course/pm/aggr/CentralisedExecutor.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="34" column="26" selection-start="1121" selection-end="1121" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="DBStatementsExecutorTest.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/hadoop-api/src/test/java/by/iba/course/pm/api/jdbc/DBStatementsExecutorTest.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="32" column="12" selection-start="741" selection-end="1047" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="NewsAdapter.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/hadoop-cyclic-job/src/main/java/by/iba/course/pm/NewsAdapter.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="19" column="0" selection-start="320" selection-end="320" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="PredefinedStatement.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/hadoop-api/src/main/java/by/iba/course/pm/api/jdbc/stmt/PredefinedStatement.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="9" column="17" selection-start="107" selection-end="107" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="TutByNewsAdapter.java" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/hadoop-cyclic-job/src/main/java/by/iba/course/pm/TutByNewsAdapter.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="21" column="0" selection-start="504" selection-end="504" vertical-scroll-proportion="0.41828254">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Element.class" pinned="false" current="false" current-in-tab="false">
-        <entry file="jar://$MAVEN_REPOSITORY$/org/jsoup/jsoup/1.7.2/jsoup-1.7.2.jar!/org/jsoup/nodes/Element.class">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="134" column="28" selection-start="6606" selection-end="6606" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Elements.class" pinned="false" current="false" current-in-tab="false">
-        <entry file="jar://$MAVEN_REPOSITORY$/org/jsoup/jsoup/1.7.2/jsoup-1.7.2.jar!/org/jsoup/select/Elements.class">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="6" column="13" selection-start="159" selection-end="159" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="DBStatementsExecutor.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/hadoop-api/src/main/java/by/iba/course/pm/api/jdbc/DBStatementsExecutor.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="35" column="62" selection-start="960" selection-end="981" vertical-scroll-proportion="0.0">
+            <state line="3" column="8" selection-start="41" selection-end="41" vertical-scroll-proportion="0.30201343">
               <folding />
             </state>
           </provider>
@@ -389,6 +316,40 @@
       <sortByType />
     </navigator>
     <panes>
+      <pane id="PackagesPane">
+        <subPane>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="smart-aggregator" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewProjectNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="smart-aggregator" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="hadoop-cyclic-job" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewModuleNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="smart-aggregator" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="hadoop-cyclic-job" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewModuleNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="by.iba.course.pm" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageElementNode" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
+      </pane>
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -793,40 +754,6 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="PackagesPane">
-        <subPane>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="smart-aggregator" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewProjectNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="smart-aggregator" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="hadoop-cyclic-job" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewModuleNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="smart-aggregator" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="hadoop-cyclic-job" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewModuleNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="by.iba.course.pm" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageElementNode" />
-            </PATH_ELEMENT>
-          </PATH>
-        </subPane>
-      </pane>
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -843,12 +770,12 @@
     <property name="MemberChooser.copyJavadoc" value="false" />
     <property name="GoToClass.toSaveIncludeLibraries" value="false" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="MemberChooser.showClasses" value="true" />
     <property name="FullScreen" value="false" />
+    <property name="MemberChooser.showClasses" value="true" />
     <property name="GoToClass.includeLibraries" value="false" />
-    <property name="dynamic.classpath" value="false" />
-    <property name="options.splitter.details.proportions" value="0.2" />
     <property name="options.searchVisible" value="true" />
+    <property name="options.splitter.details.proportions" value="0.2" />
+    <property name="dynamic.classpath" value="false" />
   </component>
   <component name="RunManager" selected="JUnit.All in hadoop-cyclic-job">
     <configuration default="false" name="All in hadoop-cyclic-job" type="JUnit" factoryName="JUnit" temporary="true">
@@ -932,19 +859,6 @@
       <option name="PORT" value="5005" />
       <method />
     </configuration>
-    <configuration default="true" type="Applet" factoryName="Applet">
-      <module name="" />
-      <option name="MAIN_CLASS_NAME" />
-      <option name="HTML_FILE_NAME" />
-      <option name="HTML_USED" value="false" />
-      <option name="WIDTH" value="400" />
-      <option name="HEIGHT" value="300" />
-      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
-      <option name="VM_PARAMETERS" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <method />
-    </configuration>
     <configuration default="true" type="TestNG" factoryName="TestNG">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <module name="" />
@@ -971,6 +885,19 @@
       <envs />
       <properties />
       <listeners />
+      <method />
+    </configuration>
+    <configuration default="true" type="Applet" factoryName="Applet">
+      <module name="" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="HTML_FILE_NAME" />
+      <option name="HTML_USED" value="false" />
+      <option name="WIDTH" value="400" />
+      <option name="HEIGHT" value="300" />
+      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
+      <option name="VM_PARAMETERS" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
       <method />
     </configuration>
     <configuration default="true" type="Application" factoryName="Application">
@@ -1145,7 +1072,7 @@
     <frame x="10" y="22" width="1420" height="808" extended-state="0" />
     <editor active="false" />
     <layout>
-      <window_info id="Changes" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.36482558" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Changes" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.74347824" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="JetGradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -1155,20 +1082,20 @@
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="IDEtalk" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32848838" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33139536" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32753623" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32994187" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.2496361" sideWeight="0.67151165" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.19723435" sideWeight="0.6351744" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2496361" sideWeight="0.6351744" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2496361" sideWeight="0.25652173" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.36482558" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Remote Host" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33139536" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
@@ -1241,47 +1168,9 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/hadoop-api/src/main/java/by/iba/course/pm/api/jdbc/DBStatementsExecutor.java">
+    <entry file="jar://$MAVEN_REPOSITORY$/org/jsoup/jsoup/1.7.2/jsoup-1.7.2.jar!/org/jsoup/nodes/Element.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="35" column="62" selection-start="960" selection-end="981" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/hadoop-cyclic-job/src/main/java/by/iba/course/pm/App.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="33" column="61" selection-start="1006" selection-end="1006" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/hadoop-api/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/scripts/usefullScripts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="13" column="63" selection-start="360" selection-end="423" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/hadoop-api/src/main/java/by/iba/course/pm/api/jdbc/stmt/Statement.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="13" column="22" selection-start="203" selection-end="203" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/hadoop-api/src/main/java/by/iba/course/pm/api/jdbc/stmt/impl/InsertLinkStatement.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="16" column="20" selection-start="350" selection-end="350" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/hadoop-api/src/main/java/by/iba/course/pm/api/jdbc/stmt/PredefinedStatement.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="17" selection-start="107" selection-end="107" vertical-scroll-proportion="0.0">
+        <state line="134" column="28" selection-start="6606" selection-end="6606" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
@@ -1293,58 +1182,30 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/hadoop-api/src/test/java/by/iba/course/pm/api/jdbc/DBStatementsExecutorTest.java">
+    <entry file="file://$PROJECT_DIR$/hadoop-api/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="32" column="12" selection-start="741" selection-end="1047" vertical-scroll-proportion="0.0">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/hadoop-api/src/main/java/by/iba/course/pm/api/jdbc/DBStatementsExecutor.java">
+    <entry file="jar://$MAVEN_REPOSITORY$/org/jsoup/jsoup/1.7.2/jsoup-1.7.2.jar!/org/jsoup/select/Elements.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="35" column="62" selection-start="960" selection-end="981" vertical-scroll-proportion="0.0">
+        <state line="6" column="13" selection-start="159" selection-end="159" vertical-scroll-proportion="0.038860105">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="jar://$MAVEN_REPOSITORY$/org/jsoup/jsoup/1.7.2/jsoup-1.7.2.jar!/org/jsoup/nodes/Element.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="134" column="28" selection-start="6606" selection-end="6606" vertical-scroll-proportion="0.0">
+        <state line="134" column="28" selection-start="6606" selection-end="6606" vertical-scroll-proportion="0.04021448">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/hadoop-manager/src/main/java/by/iba/course/pm/aggr/CentralisedExecutor.java">
+    <entry file="file://$PROJECT_DIR$/hadoop-manager/src/main/java/by/bsu/course/pm/aggr/CentralisedExecutor.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="34" column="26" selection-start="1121" selection-end="1121" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/hadoop-cyclic-job/src/main/java/by/iba/course/pm/LinksReducer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="36" column="10" selection-start="990" selection-end="990" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/hadoop-cyclic-job/src/main/java/by/iba/course/pm/NewsAdapter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="19" column="0" selection-start="320" selection-end="320" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/hadoop-cyclic-job/src/main/java/by/iba/course/pm/LinksMapper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="37" column="20" selection-start="1191" selection-end="1191" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/hadoop-cyclic-job/src/main/java/by/iba/course/pm/TutByNewsAdapter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="21" column="0" selection-start="504" selection-end="504" vertical-scroll-proportion="0.41828254">
+        <state line="3" column="8" selection-start="41" selection-end="41" vertical-scroll-proportion="0.30201343">
           <folding />
         </state>
       </provider>
@@ -1416,6 +1277,7 @@
       </state>
       <state key="ProjectJDKs.UI">
         <settings>
+          <last-edited>1.6</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>

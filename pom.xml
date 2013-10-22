@@ -28,9 +28,10 @@
         <module>hadoop-manager</module>
         <module>hadoop-cyclic-job</module>
         <module>hadoop-api</module>
+        <module>nutch-client</module>
     </modules>
 
-    <groupId>by.iba.course.pm</groupId>
+    <groupId>by.bsu.course.pm</groupId>
     <artifactId>smart-aggregator</artifactId>
     <version>1.0-SNAPSHOT</version>
     <packaging>pom</packaging>

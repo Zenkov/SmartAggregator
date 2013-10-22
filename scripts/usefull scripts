@@ -1,0 +1,14 @@
+#start Derby at default port (1527):
+startNetworkServer
+#Start Derby client:
+windows: java -jar %DERBY_HOME%\lib\derbyrun.jar ij
+other: java -jar $DERBY_HOME/lib/derbyrun.jar ij
+
+#Connect and create DB via ij
+connect 'jdbc:derby:LinksDB;create=true';
+#Connect to existing, e.g.:
+connect 'jdbc:derby://localhost:1527/LinksDB;create=true';
+
+
+#Table creation
+create table links (link varchar(100) unique, visited char(1));
