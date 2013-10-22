@@ -1,23 +1,22 @@
 package by.bsu.course.pm;
 
 
+import by.bsu.course.pm.api.adapters.TutByNewsAdapter;
 import org.apache.hadoop.io.IntWritable;
 import org.apache.hadoop.io.Text;
 import org.apache.hadoop.mapreduce.Mapper;
-import org.jsoup.HttpStatusException;
-import org.jsoup.*;
-import org.jsoup.UnsupportedMimeTypeException;
+import org.jsoup.Jsoup;
 import org.jsoup.nodes.Document;
 import org.jsoup.nodes.Element;
 import org.jsoup.select.Elements;
 
 import java.io.IOException;
 import java.net.MalformedURLException;
-import java.net.SocketException;
-import java.net.SocketTimeoutException;
 import java.net.URL;
+import java.util.logging.Logger;
 
 public class LinksMapper extends Mapper<Object, Text, Text, IntWritable> {
+    private static final Logger LOGGER = Logger.getLogger(LinksMapper.class.getName());
     private final static IntWritable one = new IntWritable(1);
     private Text newLink = new Text();
 
@@ -33,14 +32,11 @@ public class LinksMapper extends Mapper<Object, Text, Text, IntWritable> {
                 Document document = Jsoup.connect(url).get();
                 TutByNewsAdapter adapter = new TutByNewsAdapter(document);
                 if (adapter.isArticlePresent()) {
-                   System.out.println(adapter.getTitle());
-
-                    System.out.println("YEAH!");
+//                    write
                 }
                 Elements allLinks = document.select("body a");
                 for (Element a : allLinks) {
                     String urlToWrite = a.attr("abs:href");
-//                    System.out.println(urlToWrite);
 
                     if (isValidLink(urlToWrite) && isLinkToInternalPage(urlToWrite, url)) {
                         newLink.set(urlToWrite);
@@ -48,24 +44,10 @@ public class LinksMapper extends Mapper<Object, Text, Text, IntWritable> {
                     }
                 }
             }
-        } catch (SocketTimeoutException ex) {
-            System.out.println("Timeout");
-        } catch (IllegalArgumentException ex) {
-            System.out.println(" Illegial");
-        } catch (UnsupportedMimeTypeException ex) {
-            System.out.println("Unsupported");
-
-        } catch (HttpStatusException ex) {
-            System.out.println("Status");
-        } catch (SocketException ex) {
-            System.out.println("Socket Exc");
-        } catch (IOException ex) {
-            System.out.println("IO Exc");
         }
         catch (Exception e) {
-            System.out.println("EXCE Exc");
+            LOGGER.severe(String.format("%s: %s", e.getClass().getName(), e.getMessage()));
         }
-
     }
 
     private boolean isValidLink(String url) {
@@ -85,7 +67,7 @@ public class LinksMapper extends Mapper<Object, Text, Text, IntWritable> {
             validLink = urlInPage.getHost().contains(pageUrl.getHost());
         }
         catch (MalformedURLException e) {
-            System.out.println("Incorrect link");
+            LOGGER.severe(String.format("%s: %s", e.getClass().getName(), e.getMessage()));
         }
 
         return validLink;

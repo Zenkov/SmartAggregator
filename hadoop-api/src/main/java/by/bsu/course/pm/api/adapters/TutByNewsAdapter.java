@@ -1,4 +1,4 @@
-package by.bsu.course.pm;
+package by.bsu.course.pm.api.adapters;
 
 import org.jsoup.nodes.Document;
 

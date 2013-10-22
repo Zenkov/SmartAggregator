@@ -1,4 +1,4 @@
-package by.bsu.course.pm;
+package by.bsu.course.pm.api.adapters;
 
 import org.jsoup.nodes.Document;
 
@@ -17,5 +17,9 @@ public abstract class NewsAdapter {
 
     }
 
+    public abstract boolean isArticlePresent();
 
+    public abstract String getTitle();
+
+    public abstract String getContent();
 }

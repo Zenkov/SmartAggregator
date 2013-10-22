@@ -7,6 +7,7 @@ import org.apache.hadoop.io.Text;
 import org.apache.hadoop.mapreduce.Reducer;
 
 import java.io.IOException;
+import java.util.logging.Logger;
 
 /**
  * Created with IntelliJ IDEA.
@@ -19,30 +20,19 @@ public class LinksReducer
         extends Reducer<Text, IntWritable, Text, IntWritable> {
 
     private IntWritable occurrencesOfWord = new IntWritable();
+    private static final Logger LOGGER = Logger.getLogger(LinksReducer.class.getName());
 
     public void reduce(Text key,
                        Iterable<IntWritable> values,
                        Context context)
             throws IOException, InterruptedException {
 
-
-        int sum = 0;
-
-        for (IntWritable val : values) {
-            sum += val.get();
-        }
-        occurrencesOfWord.set(sum);
-
-//        context.write(key, occurrencesOfWord);
         DBStatementsExecutor dbStatementsExecutor = DBStatementsExecutor.getInstance();
         try {
             dbStatementsExecutor.executeStatement(new InsertLinkStatement(key.toString()));
 
         } catch (Exception e) {
-            System.out.println(key.toString());
-             System.out.println(e.getMessage());
+            LOGGER.severe(String.format("%s: %s", e.getClass().getName(), e.getMessage()));
         }
-
-        System.err.println(String.format("[reduce] word: (%s), count: (%d)", key, occurrencesOfWord.get()));
     }
 }
