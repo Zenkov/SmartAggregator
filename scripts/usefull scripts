@@ -12,3 +12,4 @@ connect 'jdbc:derby://localhost:1527/LinksDB;create=true';
 
 #Table creation
 create table links (link varchar(100) unique, visited char(1));
+create table articles (id bigint  generated always as identity (START WITH 1, INCREMENT BY 1), link varchar(100), title varchar(300), content long varchar);

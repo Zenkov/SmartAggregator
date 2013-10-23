@@ -1,23 +1,26 @@
 package by.bsu.course.pm;
 
 
+import by.bsu.course.pm.api.adapters.NewsAdapter;
+import by.bsu.course.pm.api.adapters.TutByNewsAdapter;
+import by.bsu.course.pm.api.jdbc.DBStatementsExecutor;
+import by.bsu.course.pm.api.jdbc.stmt.impl.InsertArticleStatement;
+import by.bsu.course.pm.api.jdbc.stmt.impl.InsertLinkStatement;
 import org.apache.hadoop.io.IntWritable;
 import org.apache.hadoop.io.Text;
 import org.apache.hadoop.mapreduce.Mapper;
-import org.jsoup.HttpStatusException;
-import org.jsoup.*;
-import org.jsoup.UnsupportedMimeTypeException;
+import org.jsoup.Jsoup;
 import org.jsoup.nodes.Document;
 import org.jsoup.nodes.Element;
 import org.jsoup.select.Elements;
 
 import java.io.IOException;
 import java.net.MalformedURLException;
-import java.net.SocketException;
-import java.net.SocketTimeoutException;
 import java.net.URL;
+import java.util.logging.Logger;
 
 public class LinksMapper extends Mapper<Object, Text, Text, IntWritable> {
+    private static final Logger LOGGER = Logger.getLogger(LinksMapper.class.getName());
     private final static IntWritable one = new IntWritable(1);
     private Text newLink = new Text();
 
@@ -30,17 +33,14 @@ public class LinksMapper extends Mapper<Object, Text, Text, IntWritable> {
 
             if (isValidLink(url)) {
 
-                Document document = Jsoup.connect(url).get();
+                Document document = Jsoup.connect(url).userAgent("Mozilla").get();
                 TutByNewsAdapter adapter = new TutByNewsAdapter(document);
                 if (adapter.isArticlePresent()) {
-                   System.out.println(adapter.getTitle());
-
-                    System.out.println("YEAH!");
+                    writeArticle(url, adapter);
                 }
                 Elements allLinks = document.select("body a");
                 for (Element a : allLinks) {
                     String urlToWrite = a.attr("abs:href");
-//                    System.out.println(urlToWrite);
 
                     if (isValidLink(urlToWrite) && isLinkToInternalPage(urlToWrite, url)) {
                         newLink.set(urlToWrite);
@@ -48,24 +48,10 @@ public class LinksMapper extends Mapper<Object, Text, Text, IntWritable> {
                     }
                 }
             }
-        } catch (SocketTimeoutException ex) {
-            System.out.println("Timeout");
-        } catch (IllegalArgumentException ex) {
-            System.out.println(" Illegial");
-        } catch (UnsupportedMimeTypeException ex) {
-            System.out.println("Unsupported");
-
-        } catch (HttpStatusException ex) {
-            System.out.println("Status");
-        } catch (SocketException ex) {
-            System.out.println("Socket Exc");
-        } catch (IOException ex) {
-            System.out.println("IO Exc");
         }
         catch (Exception e) {
-            System.out.println("EXCE Exc");
+            LOGGER.severe(String.format("%s: %s", e.getClass().getName(), e.getMessage()));
         }
-
     }
 
     private boolean isValidLink(String url) {
@@ -81,13 +67,23 @@ public class LinksMapper extends Mapper<Object, Text, Text, IntWritable> {
         try {
             URL pageUrl = new URL(urlOfPage);
             URL urlInPage = new URL(linkInPage);
-            System.out.println(urlOfPage);
             validLink = urlInPage.getHost().contains(pageUrl.getHost());
         }
         catch (MalformedURLException e) {
-            System.out.println("Incorrect link");
+            LOGGER.severe(String.format("%s: %s", e.getClass().getName(), e.getMessage()));
         }
 
         return validLink;
+    }
+
+    private void writeArticle(String link, NewsAdapter adapter) {
+        DBStatementsExecutor dbStatementsExecutor = by.bsu.course.pm.api.jdbc.DBStatementsExecutor.getInstance();
+        try {
+            dbStatementsExecutor.executeStatement(new InsertArticleStatement(link, adapter.getTitle(), adapter.getContent()));
+
+        } catch (Exception e) {
+            e.printStackTrace();
+            LOGGER.severe(String.format("%s: %s", e.getClass().getName(), e.getMessage()));
+        }
     }
 }
