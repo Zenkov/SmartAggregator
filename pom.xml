@@ -29,6 +29,7 @@
         <module>hadoop-cyclic-job</module>
         <module>hadoop-api</module>
         <module>nutch-client</module>
+        <module>hadoop-webapp</module>
     </modules>
 
     <groupId>by.bsu.course.pm</groupId>
