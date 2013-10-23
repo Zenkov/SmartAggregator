@@ -15,15 +15,20 @@ public class TutByNewsAdapter extends NewsAdapter {
     }
 
     public boolean isArticlePresent() {
-        return !this.page.select("body div.body div.h h2").isEmpty();
+        return !this.page.select("body div.b-article div.m_header h1").isEmpty() &&
+                !this.page.select("body div#article_body").isEmpty();
     }
 
     public String getTitle() {
-        return this.page.select("body div.body  div.h h2").first().text();
+        return this.page.select("body div.b-article div.m_header h1").first().text();
     }
 
     public String getContent() {
-        return this.page.select("body div.body > p").first().text();
+        return this.page.select("body div#article_body").first().text();
     }
 
+    @Override
+    public String siteUrl() {
+        return "http://tut.by";
+    }
 }

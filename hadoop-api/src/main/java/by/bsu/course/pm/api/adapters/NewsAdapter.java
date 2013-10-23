@@ -22,4 +22,6 @@ public abstract class NewsAdapter {
     public abstract String getTitle();
 
     public abstract String getContent();
+
+    public abstract String siteUrl();
 }

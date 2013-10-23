@@ -33,7 +33,7 @@ public class LinksMapper extends Mapper<Object, Text, Text, IntWritable> {
 
             if (isValidLink(url)) {
 
-                Document document = Jsoup.connect(url).get();
+                Document document = Jsoup.connect(url).userAgent("Mozilla").get();
                 TutByNewsAdapter adapter = new TutByNewsAdapter(document);
                 if (adapter.isArticlePresent()) {
                     writeArticle(url, adapter);
@@ -82,6 +82,7 @@ public class LinksMapper extends Mapper<Object, Text, Text, IntWritable> {
             dbStatementsExecutor.executeStatement(new InsertArticleStatement(link, adapter.getTitle(), adapter.getContent()));
 
         } catch (Exception e) {
+            e.printStackTrace();
             LOGGER.severe(String.format("%s: %s", e.getClass().getName(), e.getMessage()));
         }
     }
