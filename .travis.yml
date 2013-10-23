@@ -2,3 +2,4 @@ language: java
 jdk:
    - openjdk6
 install: mvn install -DskipTests=true -B
+script: mvn -q deploy --settings .travis-settings.xml
