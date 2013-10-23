@@ -1,3 +1,4 @@
-language: java --version 1.6
-install: "mvn install -DskipTests=true -B"
-script: mvn --version 2.5.1
+language: java
+jdk:
+-openjdk6
+install: "mvn --version 2.5.1 install -DskipTests=true -B"
