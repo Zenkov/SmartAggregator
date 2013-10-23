@@ -1,7 +1,11 @@
 package by.bsu.course.pm;
 
 
+import by.bsu.course.pm.api.adapters.NewsAdapter;
 import by.bsu.course.pm.api.adapters.TutByNewsAdapter;
+import by.bsu.course.pm.api.jdbc.DBStatementsExecutor;
+import by.bsu.course.pm.api.jdbc.stmt.impl.InsertArticleStatement;
+import by.bsu.course.pm.api.jdbc.stmt.impl.InsertLinkStatement;
 import org.apache.hadoop.io.IntWritable;
 import org.apache.hadoop.io.Text;
 import org.apache.hadoop.mapreduce.Mapper;
@@ -32,7 +36,7 @@ public class LinksMapper extends Mapper<Object, Text, Text, IntWritable> {
                 Document document = Jsoup.connect(url).get();
                 TutByNewsAdapter adapter = new TutByNewsAdapter(document);
                 if (adapter.isArticlePresent()) {
-//                    write
+                    writeArticle(url, adapter);
                 }
                 Elements allLinks = document.select("body a");
                 for (Element a : allLinks) {
@@ -63,7 +67,6 @@ public class LinksMapper extends Mapper<Object, Text, Text, IntWritable> {
         try {
             URL pageUrl = new URL(urlOfPage);
             URL urlInPage = new URL(linkInPage);
-            System.out.println(urlOfPage);
             validLink = urlInPage.getHost().contains(pageUrl.getHost());
         }
         catch (MalformedURLException e) {
@@ -71,5 +74,15 @@ public class LinksMapper extends Mapper<Object, Text, Text, IntWritable> {
         }
 
         return validLink;
+    }
+
+    private void writeArticle(String link, NewsAdapter adapter) {
+        DBStatementsExecutor dbStatementsExecutor = by.bsu.course.pm.api.jdbc.DBStatementsExecutor.getInstance();
+        try {
+            dbStatementsExecutor.executeStatement(new InsertArticleStatement(link, adapter.getTitle(), adapter.getContent()));
+
+        } catch (Exception e) {
+            LOGGER.severe(String.format("%s: %s", e.getClass().getName(), e.getMessage()));
+        }
     }
 }
